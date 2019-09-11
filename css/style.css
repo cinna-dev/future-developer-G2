@@ -53,7 +53,7 @@ html{
 .col-12{
     width: 100%;
 }
- /* all flaot classes called col- will be float */
+ /* all classes called col- will be float */
 div[class*="col-" ]{
     float: left;
 }
