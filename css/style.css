@@ -116,10 +116,10 @@
     right: 15px;
     bottom: 15px;
     left: 15px;
-    border-radius: 50px;
+    border-radius: 20px;
     content: "";
     opacity: 0;
-    transition: opacity 2s, transform 6s;
+    transition: opacity 2s, transform 2s;
     
   }
   
@@ -148,7 +148,7 @@
     width: 100%;
     padding: 10px;
     opacity: 0;
-    transition: opacity 3s, transform 5s;
+    transition: opacity 3s, transform 3s;
     transform: translate3d(0, 340px, 0);
   }
   
