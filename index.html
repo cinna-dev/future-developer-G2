@@ -1,21 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>navbar Menu</title>
-        <link rel="stylesheet" href="./css/style.css">
-		<link rel="stylesheet" href="./css/navbar.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Grid.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  
 
 <body>
-<!--  -->
-      
-	<nav>
-		<input  type="checkbox"  id="togglecheckbox">
+<!-- ///////////////////////////navbar/////////////////////////// -->
+<nav>
+	<input  type="checkbox"  id="togglecheckbox">
 		<div class="togglelabel" >
 			<label class="fa fa-align-justify" style="font-size:24px"  for="togglecheckbox"></label> 
 		</div>
@@ -30,6 +31,7 @@
 			</li>
 			<li><a href="#contact">Contact</a></li>
 			<li><a href="#team"><span class="fa fa-angle-double-down"></span> Language</a>
+			<li><a href="#contact">Goals</a></li>
 				<ul>
 					<li><a href="#">English</a></li>
 					<li><a href="#">Deutsch</a></li>
@@ -39,16 +41,141 @@
 		<div class="clearfix"></div>
 	</nav>
     
-    <div id="header"></div>
-	<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
-
-	<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+   <!--  <div id="header"></div>
+	
 	<div id="about">About</div>
-	<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+	
 	<div id="team">Team</div>
-	<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+
 	<div id="contact">Contact</div>
-    <p>sdf</p>
+    <p>sdf</p> -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+<!--   ///////////////////////////////////////// slideshow////////////////////////////////////////////////////-->
+    <!-- zuerst das Sichtfenster -->
+     <div class="gridContainer">
+    <div class="O-Slider gcol-1-24 ">
+ 
+      <!-- die inputs um den Slider zu Steuern -->
+      <input type="radio" name="slider" id="slide01" checked="checked"> 
+      <input type="radio" name="slider" id="slide02">
+      <input type="radio" name="slider" id="slide03">
+      <input type="radio" name="slider" id="slide04">
+   
+      <!-- die einzelnen Slides, hier als Liste angelegt -->
+      <ul class="O-sliderElements">
+          <li>
+              <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.Brave dog likes to be outside.Brave dog likes to be outside. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui, hic sunt magni id blanditiis ducimus voluptates eaque voluptatem doloremque, consequuntur nemo!</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.Brave dog likes to be outside.Brave dog likes to be outside.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.Brave dog likes to be outside.Brave dog likes to be outside.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.Brave dog likes to be outside.Brave dog likes to be outside.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              
+              
+              </li>
+
+              
+               
+          
+          <li>
+                <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+          </li>
+          <li>
+              <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+          </li>
+          <li>
+              <div class="tm-gallery-item">                        
+                  <figure class="effect-bubba">
+                    <img src="img/gallery/01.jpg" class="img-fluid">
+                    <figcaption> 
+                      <h2>Brave <span>Dog</span></h2>
+                      <p>Brave dog likes to be outside.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+          </li>
+      </ul>
+   
+      <!-- Eine Steuerung -->
+      <ul class="sliderControls">
+          <li><label for="slide01">1</label></li>
+          <li><label for="slide02">2</label></li>
+          <li><label for="slide03">3</label></li>
+          <li><label for="slide04">4</label></li>
+      </ul>
+  </div>
+</div>      
+  
 </body>
 
 </html>

@@ -1,3 +1,629 @@
+
+*{
+    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+}
+/* ////////////////////////////////navbar////////////////////////////// */
+html{
+    scroll-behavior: smooth;      /* importantt for smooth scroll */
+    color: -internal-root-color;
+        
+}
+body{
+    font-family: 'Droid Sans', sans-serif;
+}
+ul{
+	list-style: none;
+	display: block;
+}
+
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Default Styles 
+--------------------------------------------------------------------*/
+
+
+
+.clearfix {
+	clear: both;
+}
+
+
+nav {
+	background: -webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(204, 204, 204, 0.8)));
+	background-image: linear-gradientrgba( rgba(255, 255, 255, 0.8), (rgba(204, 204, 204, 0.8)));
+	/* border-radius: 6px; */
+	box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.4);
+    padding: 0 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+   /*  left: 20px; */
+	z-index: 100;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-radius: 0px 0px 25px 25px;
+}
+
+.menu>li {
+	float: left;
+	position: relative;
+}
+.menu li{
+	border-radius: 0px 0px 25px 25px;
+}
+.menu>li::after{
+	content: "";
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 40px;
+	border-radius: 35%;
+	width: 4px;
+	z-index: 101;
+	display: block;
+	top: 6px;
+	right: 0;
+	position: absolute;
+}
+.menu>li:nth-child(5)::after{
+	content: "";
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 40px;
+	border-radius: 35%;
+	width: 4px;
+	z-index: 101;
+	display: block;
+	top: 6px;
+	left: 0;
+	position: absolute;
+}
+.menu>li>ul{
+	border-radius: 0px 0px 25px 25px;
+	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+}
+.menu>li:nth-child(5){
+	float: right;
+}
+.menu>li:nth-child(5)>a>span{
+	position: absolute;
+	margin-left: 40px;
+	top: 36px;	
+	font-size: 32px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
+	transition: transform 0.25s;
+	z-index: 102;
+	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+}
+.menu>li:nth-child(3)>a>span{
+	position: absolute;
+	margin-left: 12px;
+	top: 36px;	
+	font-size: 32px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
+	transition: transform 0.25s;
+	z-index: 102;
+	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+}
+.menu>li>a{
+
+	color: #444;
+	display: block;
+	width: auto;
+	font-size: 20px;
+	line-height: 20px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 2.3vw;
+	padding-right: 2.3vw;
+	/* vertical-align: middle; */
+    text-decoration: none;
+	/* position: relative; */
+	text-transform: uppercase;
+	text-align: center;	
+}
+.menu>li>ul>li>a{
+	color: #444;
+	display: block;
+	width: auto;
+	font-size: 20px;
+	line-height: 20px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	/* vertical-align: middle; */
+    text-decoration: none;
+	/* position: relative; */
+	text-transform: uppercase;
+	text-align: center;	
+}
+
+
+.menu li a:active{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu li a:hover {
+	
+	text-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+
+}
+
+/* Dropdown styles */
+
+.menu ul {
+	position: absolute;
+	/* left: -9999px; */
+	list-style: none;
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	display: block;
+	
+}
+
+/* .menu ul li {
+	float: none;
+	
+} */
+
+.menu ul a {
+	white-space: nowrap;
+	
+}
+
+/*//////////////////////////// Displays the dropdown on hover and moves back into position////////////////////////// */
+.menu li:hover ul {
+	background:-webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(204, 204, 204, 0.7)));               /* rgba(255,255,255,0.7); */
+	border-radius: 0 0 6px 6px;
+	left: 5px;
+	opacity: 1;
+	height: auto;
+	transition: height 0.5s, opacity 0.5s ease;
+}
+.menu>li:nth-child(5):hover>a>span{
+		transform: translateY(104px)
+}
+.menu>li:nth-child(3):hover>a>span{
+	transform: translateY(104px)
+}
+/*////////////////////////////////////////// Persistant Hover State //////////////////////////////////////////*/
+.menu li:hover >a {
+	
+	
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	/* color: #222; */
+	color: white;
+	
+}
+.menu li:hover{
+	background-color:rgba(128, 128, 128, 0.7);
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.178);
+}
+.menu li:hover ul a {
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.menu li:hover ul li a:hover {
+	
+	text-shadow:  0px 0px 4px 2px rgba(0,0,0,0.3);
+	
+}
+/*/////////////// togglebox ///////////////*/
+#togglecheckbox{
+	display: none;
+	}
+	
+.togglelabel{
+	top: 20px;
+	width:50px;
+	height:50px;
+	position: relative;
+	display: none;
+	margin: 10px;	
+}
+.togglelabel>label{
+	transition: transform 0.25s;
+	color: rgba(0, 0, 0, 0.8);
+}
+#togglecheckbox:checked ~ .menu{
+	height: auto;
+}
+/*//////////////////////////// media querry///////////////////////////////// */
+@media (max-width: 821px){
+	.togglelabel{
+		display: block; 
+	}
+	#togglecheckbox:checked ~ .menu{
+		height: auto;
+	}
+	#togglecheckbox:checked ~ .menu li::before{
+		content: "";
+		width: 1200px;
+		height: 1px;
+		display: block;
+		position: relative;
+		background-color: black;
+		z-index: 101;
+	}
+	#togglecheckbox:checked + div>label{
+		color: rgba(255, 255, 255, 0.9);
+		transform: rotateZ(90deg);
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	nav{
+		background-color: rgb(220, 220, 220);
+		margin: 0;
+	}
+	.menu>li:nth-child(5):hover>a>span{
+		transform: translateY(124px)
+	}
+	.menu>li:nth-child(3):hover>a>span{
+	transform: translateY(114px)
+	}
+	
+	.menu>li::after{
+		content: "";
+		display: none;
+	}
+	/* .menu>li>ul>li{
+		display: list-item;
+		float: left;
+	} */
+	.menu li{
+		width: 100%;
+		height: auto;
+		}
+	.menu li ul li{
+			width: auto;
+			}	
+			
+	.menu li ul{
+		list-style-type: none;
+		height: 0;
+		transition:  height 2s;
+		overflow: hidden;
+		display: block;
+		width:100% ;
+		border-radius: 0 0 0 0 ;
+		position: static;
+	}
+	.menu li:hover ul{
+		height: 140px;
+	}
+	.menu>li:nth-child(5)>a{
+		padding-bottom: 28px;
+	}
+	.menu{
+		height: 0;
+		overflow: hidden;
+		transition: height 1s cubic-bezier(0.23, 1, 0.320, 1) ;
+		
+	}
+	
+	.menu ul {
+		text-align: center;
+	}
+}
+/* ///////////////for Reduce Motion API's//////////////// */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+
+
+/*///////////////////slideshow ///////////////////*/
+
+
+
+.tm-gallery-item figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    /* margin-bottom: 0; */
+    /* background: #3085a3; */
+    text-align: center;
+    cursor: pointer;
+    
+    
+  }
+
+  
+  .tm-gallery-item figure img {
+    position: relative;
+    display: block;
+    max-height: 400px;
+    max-width: 600px;
+    opacity: 0.8;
+    
+    
+   
+  }
+  
+  .tm-gallery-item figure figcaption {
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    /* text-transform: uppercase; */
+    font-size: 1.25em;
+    backface-visibility: hidden;
+    
+  }
+  
+  .tm-gallery-item figure figcaption::before,
+  .tm-gallery-item figure figcaption::after {
+    pointer-events: none;
+    
+  }
+  
+  .tm-gallery-item figure figcaption,
+  .tm-gallery-item figure figcaption> a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  /* Anchor will cover the whole item by default */
+  /* For some effects it will show as a button */
+  .tm-gallery-item figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+    
+  }
+  
+  .tm-gallery-item figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+  }
+  
+  .tm-gallery-item figure h2 span {
+    font-weight: 800;
+  }
+  
+  .tm-gallery-item figure h2,
+  .tm-gallery-item figure p {
+    margin: 0;
+  }
+  
+  .tm-gallery-item figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+    line-height: 20px;
+  }
+  
+  /*---------------*/
+  /***** Bubba *****/
+  /*---------------*/
+  
+ figure.effect-bubba {
+    background: rgb(0, 0, 0);
+    
+  }
+  
+  .effect-bubba img {
+    opacity: 1;
+    transition: filter 2s;
+    
+  }
+  
+  figure.effect-bubba:hover img {
+    opacity: 0.8;
+    filter: blur(5px)
+  }
+  
+  .effect-bubba figcaption::before,
+  .effect-bubba figcaption::after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 20px;
+    content: "";
+    opacity: 0;
+    transition: opacity 2s, transform 2s;
+    
+  }
+  
+  figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: scale(0, 1);
+  }
+  
+  figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    
+    transform: scale(1, 0);
+  } 
+  
+  figure.effect-bubba h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: transform 1s;
+    transform: translate3d(0, -30px, 0);
+  }
+  
+  figure.effect-bubba p {
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 3s, transform 3s;
+    transform: translate3d(0, 340px, 0);
+  }
+  
+  figure.effect-bubba:hover figcaption::before,
+  figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  figure.effect-bubba:hover h2,
+  figure.effect-bubba:hover p {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+
+
+
+
+
+  .O-sliderElements,
+.O-sliderElements figure,
+.sliderControls {
+  
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 0;
+
+}
+ 
+.O-sliderElements:after {
+    content: ".";
+    display: block;
+    height: .1px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    overflow: hidden;
+}
+ 
+.O-Slider {
+    overflow-x: hidden;
+    /* margin-left: 150px; */
+    /* background-color: #333; */
+
+    
+}
+ 
+.O-sliderElements {
+    list-style: none;
+    position: relative;
+    left: 0;
+    width: 400%;
+    margin-bottom: .8em;
+    padding: 0;
+    transition: left 1.5s ease-in-out;
+    margin-left: 145px;
+    margin-top: 60px;
+    
+    
+    
+    
+}
+ 
+.O-sliderElements > li {
+    float: left;
+    width: 25%;
+    position: relative;
+    
+}
+
+
+#slide02:checked ~ .O-sliderElements {
+    left: -100%;
+}
+ 
+#slide03:checked ~ .O-sliderElements {
+    left: -200%;
+}
+ 
+#slide04:checked ~ .O-sliderElements {
+    left: -300%;
+}
+ 
+/* Bildunterschrift auf dem Bild positionieren */
+/* .sliderElements figcaption {
+    display: block;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    padding: .4em;
+    background: rgba(0,0,0,.5);
+
+    
+    
+} */
+ 
+/* Bilder responsive */
+.O-sliderElements img {
+    width: 100%;
+    height: auto;
+    
+}
+ 
+ 
+/* inputs aus dem Blickfeld schieben */
+.O-Slider input {
+    position: absolute;
+    left: -99999px;
+    
+}
+ 
+/* mittige Ausrichtung der Controls - funktioniert im Zusammenspiel mit inline-block */
+.sliderControls {
+    text-align: center;
+}
+ 
+/* Controls nebeneinander bringen */
+.sliderControls li {
+    display: inline-block;
+    
+}
+ 
+/* Controls auf einheitliche Maße bringen und die Ecken abrunden */
+.sliderControls label {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    background: #68B022;
+    color: #68B022;
+    
+}
+ 
+/* Attributselektor und indirekter Nachfahrkombinator zum ansteuern der labels */
+.sliderControls label:hover,
+#slide01:checked ~ .sliderControls label[for="slide01"],
+#slide02:checked ~ .sliderControls label[for="slide02"],
+#slide03:checked ~ .sliderControls label[for="slide03"],
+#slide04:checked ~ .sliderControls label[for="slide04"] {
+    background:rgb(255, 94, 0);
+    color: rgb(255, 94, 0);
+}
+/*////////////////////////////background/////////////////////////*
 #header{
     background-image: url('../imgs/img1.jpg');
     width: 100%;
@@ -11,5 +637,5 @@
 body {
 	
 	font-family: 'Droid Sans', sans-serif;;
+
 }
-/*//*
