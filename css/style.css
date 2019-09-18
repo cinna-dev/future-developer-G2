@@ -116,7 +116,7 @@
     right: 15px;
     bottom: 15px;
     left: 15px;
-    border-radius: 20px;
+    border-radius: 25px;
     content: "";
     opacity: 0;
     transition: opacity 2s, transform 2s;
