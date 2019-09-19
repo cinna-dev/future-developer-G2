@@ -195,7 +195,7 @@ nav {
 } */
 
 .menu ul a {
-<
+
 
 	white-space: nowrap;
 	
@@ -230,7 +230,7 @@ nav {
 	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
 	/* color: #222; */
 	color: white;
-
+}
 .menu li:hover{
 	background-color:rgba(128, 128, 128, 0.7);
 	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.178);
@@ -822,8 +822,7 @@ figure.effect-bubba:hover p {
     height: auto;
   }
 
-    background:rgb(255, 94, 0);
-    color: rgb(255, 94, 0);
+    
 }
 
 /*////////////////////////////background/////////////////////////*
