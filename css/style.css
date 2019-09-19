@@ -47,7 +47,7 @@
   }
   
   .tm-gallery-item figure figcaption,
-  .tm-gallery-item figure figcaption, a {
+  .tm-gallery-item figure figcaption> a {
     position: absolute;
     top: 0;
     left: 0;
@@ -205,7 +205,7 @@
     width: 400%;
     margin-bottom: .8em;
     padding: 0;
-    transition: left 1.5s ease-in-out;
+    transition: left 2s ease-in-out;
     margin-left: 145px;
     margin-top: 60px;
     
@@ -232,6 +232,10 @@
  
 #slide04:checked ~ .O-sliderElements {
     left: -300%;
+}
+
+#slide05:checked ~ .O-sliderElements {
+    left: -500%;
 }
  
 /* Bildunterschrift auf dem Bild positionieren */
@@ -294,10 +298,11 @@
 #slide01:checked ~ .sliderControls label[for="slide01"],
 #slide02:checked ~ .sliderControls label[for="slide02"],
 #slide03:checked ~ .sliderControls label[for="slide03"],
-#slide04:checked ~ .sliderControls label[for="slide04"] {
+#slide04:checked ~ .sliderControls label[for="slide04"],
+#slide05:checked ~ .sliderControls label[for="slide05"]{
     background:rgb(255, 94, 0);
     color: rgb(255, 94, 0);
-    
+}
 /*////////////////////////////background/////////////////////////*
 #header{
     background-image: url('../imgs/img1.jpg');
