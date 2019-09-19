@@ -1,24 +1,26 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Slider</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/Grid.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-  
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Grid.css" />
+    <link rel="stylesheet" href="./css/language.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  </head>
 <body>
   <!-- ///////////////////////////Language switcher/////////////////////////////// -->
     <input type="radio" id="languageEn" name="language">
     <input type="radio" id="languageDe" name="language">
   
-<!-- ///////////////////////////navbar/////////////////////////// -->
+<!--////////////////////////////////////////////////// /////////////////////////////////////////////////
+///////////////////////////////////            navbar         //////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 <div id="header" class="gcol-1-24"></div>  
 
 <nav>
@@ -29,15 +31,15 @@
 		<ul class="menu">
 			<li><a href="#"> Home</a></li>
 			<li><a href="#about"> <p lang="en">About</p><p lang="de">Über</p></a></li>
-			<li><a><span class="fa fa-angle-double-down" ></span> Team </a>
+			<li><a> <span class="	fa fa-angle-down "> </span> Team </a>
 				<ul>
 					<li><a href="#team">Placeholder</a></li>
-					<li><a href="#team">Placeholder</a></li>
+          <li><a href="#team">Placeholder</a></li>,
 				</ul>
 			</li>
 			<li><a href="#goals"><p lang="en">Goals</p><p lang="de">Ziele</p></a></li>
 			<li><a href="#contact"><p lang="en">Contact</p><p lang="de">Kontakt</p> </a></li>
-			<li><a><span class="fa fa-angle-double-down" ></span> <p lang="en">Language</p><p lang="de">Sprachen</p></a>
+			<li><a><span class="fa fa-angle-down" ></span> <p lang="en">Language</p><p lang="de">Sprachen</p></a>
 				<ul>
 					<li><label for="languageEn"><p lang="en">English</p><p lang="de">Englisch</p></label><!-- <a id="en">English</a> --></li>
 					<li><label for="languageDe"><p lang="en">German</p><p lang="de">Deutsch</p></label><!-- <a id="de">German</a> --></li>
@@ -51,16 +53,17 @@
 	
 	<div id="about" class="gcol-1-24"><span><p>About</p></span></div>
 	
-	
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////  
+   ///////////////////////////////      slideshow      ///////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-	
-
-  
-<!--   ///////////////////////////////////////// slideshow////////////////////////////////////////////////////-->
     <!-- zuerst das Sichtfenster -->
     
-    <div id="team" class="O-Slider gcol-1-24 ">
- 	<span><p>Team</p></span>
+    <div id="team" class="gcol-1-24 "> <span> <p>Team</p> </span> </div>
+    
+    
+    <div class="O-Slider gcol-1-24 ">
+ 
       <!-- die inputs um den Slider zu Steuern -->
       <input type="radio" name="slider" id="slide01" checked="checked"> 
       <input type="radio" name="slider" id="slide02">
@@ -70,120 +73,183 @@
       <!-- die einzelnen Slides, hier als Liste angelegt -->
       <ul class="O-sliderElements">
           <li>
-              <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.Brave dog likes to be outside.Brave dog likes to be outside. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui, hic sunt magni id blanditiis ducimus voluptates eaque voluptatem doloremque, consequuntur nemo!</p>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>
+                    Brave dog likes to be outside.Brave dog likes to be
+                    outside.Brave dog likes to be outside. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Quam, qui, hic sunt magni
+                    id blanditiis ducimus voluptates eaque voluptatem
+                    doloremque, consequuntur nemo!
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
 
-                <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.Brave dog likes to be outside.Brave dog likes to be outside.</p>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>
+                    Brave dog likes to be outside.Brave dog likes to be
+                    outside.Brave dog likes to be outside.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
 
-                <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.Brave dog likes to be outside.Brave dog likes to be outside.</p>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>
+                    Brave dog likes to be outside.Brave dog likes to be
+                    outside.Brave dog likes to be outside.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
 
-                <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.Brave dog likes to be outside.Brave dog likes to be outside.</p>
-                    </figcaption>
-                  </figure>
-                </div>
-              
-              
-              </li>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>
+                    Brave dog likes to be outside.Brave dog likes to be
+                    outside.Brave dog likes to be outside.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
 
-              
-               
-          
           <li>
-                <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.</p>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>Brave dog likes to be outside.</p>
+                </figcaption>
+              </figure>
+            </div>
 
-                <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.</p>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>Brave dog likes to be outside.</p>
+                </figcaption>
+              </figure>
+            </div>
 
-                <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.</p>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>Brave dog likes to be outside.</p>
+                </figcaption>
+              </figure>
+            </div>
           </li>
           <li>
-              <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.</p>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>Brave dog likes to be outside.</p>
+                </figcaption>
+              </figure>
+            </div>
           </li>
           <li>
-              <div class="tm-gallery-item">                        
-                  <figure class="effect-bubba">
-                    <img src="img/gallery/01.jpg" class="img-fluid">
-                    <figcaption> 
-                      <h2>Brave <span>Dog</span></h2>
-                      <p>Brave dog likes to be outside.</p>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tm-gallery-item">
+              <figure class="effect-bubba">
+                <img src="./gallery/01.jpg" class="img-fluid" />
+                <figcaption>
+                  <h2>Brave <span>Dog</span></h2>
+                  <p>Brave dog likes to be outside.</p>
+                </figcaption>
+              </figure>
+            </div>
           </li>
-      </ul>
-   
-      <!-- Eine Steuerung -->
-      <ul class="sliderControls">
+        </ul>
+
+        <!-- Eine Steuerung -->
+        <ul class="sliderControls">
+
           <li><label for="slide01">1</label></li>
           <li><label for="slide02">2</label></li>
           <li><label for="slide03">3</label></li>
           <li><label for="slide04">4</label></li>
-      </ul>
-  </div>
   <div id="goals" class="gcol-1-24"><span><p>Goals</p></span></div>
   <div id="contact" class="gcol-1-24"><span><p>Contact</p></span></div>
-  
-</div>      
+</div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////      Footer      //////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////  -->
+
+     
+   
+      <div class="gcol-1-24">
+        <div class="footer">
+          <div class="inner_footer">
+            <div class="logo">
+              <img src="./gallery/Logo_CODE.svg" width="200" />
+            </div>
+
+            <div class="inner_footer_blog">
+              <div class="third-blog">
+                <h1 class="third-title">Need Help</h1>
+
+                <a href="#">Terms &amp conditoin</a>
+                <a href="#">privacy Police</a>
+              </div>
+
+              <div class="third-blog">
+                <h1 class="third-title">More information</h1>
+
+                <a href="#">Terms &amp conditoin</a>
+                <a href="#">privacy Police</a>
+              </div>
+
+              <div class="third-blog">
+                <h1 class="third-title">Follow Us</h1>
+                <ul class="social">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="to-top-container">
+      <a href="#" class="to-top"> <img src="./gallery/arrow.svg" /> </a>
+    </div>
+
+  </div>      
   
 </body>
 
 </html>
+
