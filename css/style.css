@@ -24,6 +24,7 @@ ul{
 table{
 	border-collapse: collapse;
 	border-spacing: 0;
+
 }
 
 /* Default Styles 
@@ -159,11 +160,13 @@ nav {
 	
 	text-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
 
+
 }
 
 /* Dropdown styles */
 
 .menu ul {
+
 	position: absolute;
 	/* left: -9999px; */
 	list-style: none;
@@ -180,12 +183,15 @@ nav {
 } */
 
 .menu ul a {
+
 	white-space: nowrap;
 	
+
 }
 
 /*//////////////////////////// Displays the dropdown on hover and moves back into position////////////////////////// */
 .menu li:hover ul {
+
 	background:-webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(204, 204, 204, 0.7)));               /* rgba(255,255,255,0.7); */
 	border-radius: 0 0 6px 6px;
 	left: 5px;
@@ -559,6 +565,7 @@ nav {
     left: -300%;
 }
  
+
 /* Bildunterschrift auf dem Bild positionieren */
 /* .sliderElements figcaption {
     display: block;
@@ -572,6 +579,7 @@ nav {
     
     
 } */
+
  
 /* Bilder responsive */
 .O-sliderElements img {
@@ -614,12 +622,175 @@ nav {
     
 }
  
+
 /* Attributselektor und indirekter Nachfahrkombinator zum ansteuern der labels */
 .sliderControls label:hover,
 #slide01:checked ~ .sliderControls label[for="slide01"],
 #slide02:checked ~ .sliderControls label[for="slide02"],
 #slide03:checked ~ .sliderControls label[for="slide03"],
 #slide04:checked ~ .sliderControls label[for="slide04"] {
+
+  background: rgb(255, 94, 0);
+  color: rgb(255, 94, 0);
+}
+/*////////////////////////////background/////////////////////////*/
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  box-sizing: border-box;
+  background-color: #444;
+  margin: auto;
+}
+
+.inner_footer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.logo {
+  width: 25%;
+  height: 100%;
+  margin: 0px 5px;
+  text-align: center;
+  margin-top: 35px;
+}
+.logo img {
+  width: 200px;
+}
+.logo img:hover {
+  transform: rotate(-20deg) scale(1.1);
+}
+
+.inner_footer_blog {
+  width: 75%;
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.third-blog {
+  width: 33.3%;
+  position: relative;
+
+  transition: 0.5s ease-in-out;
+}
+
+.third-blog:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.third-title {
+  height: 50px;
+  padding: 10px 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+.third-title:hover {
+  color: #fff;
+}
+
+.third-blog a {
+  display: block;
+  color: #fff;
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+.third-blog a:hover {
+  color: aqua;
+}
+
+.social {
+  text-align: center;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social li {
+  padding: 0px 20px;
+  list-style: none;
+}
+
+.social i {
+  font-size: 48px;
+  transition: 0.5 ease-in-out;
+}
+
+.social i:hover {
+  font-size: 50px;
+  transform: rotate(360deg);
+}
+
+.to-top-container {
+  position: absolute;
+  z-index: 2;
+  bottom: 120px;
+  right: 20px;
+}
+
+.to-top img {
+  width: 32px;
+}
+
+@media only screen and (max-width: 999px) {
+  .inner_footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .inner_footer_blog {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .third-blog {
+    width: 33.3%;
+  }
+  .footer {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .inner_footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .inner_footer_blog {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .third-blog {
+    width: 100%;
+  }
+  .footer {
+    height: auto;
+  }
+
     background:rgb(255, 94, 0);
     color: rgb(255, 94, 0);
 }
@@ -637,5 +808,6 @@ nav {
 body {
 	
 	font-family: 'Droid Sans', sans-serif;;
+
 
 }
