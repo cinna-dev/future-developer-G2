@@ -616,13 +616,13 @@ figure.effect-bubba:hover p {
   height: 100%;
   margin: 0px 5px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .logo img {
   width: 200px;
 }
 .logo img:hover {
-  transform: rotate(20deg) scale(1.1);
+  transform: rotate(-20deg) scale(1.1);
 }
 
 .inner_footer_blog {
@@ -667,7 +667,7 @@ figure.effect-bubba:hover p {
   color: aqua;
 }
 
-ul.social {
+.social {
   text-align: center;
   margin: 10px 0px;
   display: flex;
@@ -699,5 +699,53 @@ ul.social {
 
 .to-top img {
   width: 32px;
-  color: #68b022;
+}
+
+@media only screen and (max-width: 999px) {
+  .inner_footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .inner_footer_blog {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .third-blog {
+    width: 33.3%;
+  }
+  .footer {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .inner_footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .inner_footer_blog {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .third-blog {
+    width: 100%;
+  }
+  .footer {
+    height: auto;
+  }
 }
