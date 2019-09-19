@@ -6,10 +6,49 @@
    border: 0;
    font-size: 100%;
 }
+/* ///////////////////////////////////////////Languages/////////////////////////////////////////////// */
+#languageEn{
+    display: none;
+}
+#languageDe{
+    display: none;
+}
+
+p:lang(de){
+    display: none;
+}
+#languageEn:checked ~ nav ul li p:lang(de){
+    display: none;
+}
+#languageEn:checked ~ nav ul li p:lang(en){
+    display: block;
+}
+#languageDe:checked ~ nav ul li p:lang(de){
+    display: block;
+}
+#languageDe:checked  ~ nav ul li p:lang(en){
+    display: none;
+}
+
+}
+#languageEn:checked ~ nav ul li ul li label p:lang(de){
+    display: none;
+}
+#languageEn:checked ~ nav ul li ul li label p:lang(en){
+    display: block;
+}
+#languageDe:checked ~ nav ul li ul li label p:lang(de){
+    display: block;
+}
+#languageDe:checked  ~ nav ul li ul li label p:lang(en){
+    display: none;
+}
+
 /* ////////////////////////////////navbar////////////////////////////// */
 html{
     scroll-behavior: smooth;      /* importantt for smooth scroll */
-    color: -internal-root-color;
+    /* color: -internal-root-color; */
+
         
 }
 body{
@@ -49,13 +88,16 @@ nav {
 	z-index: 100;
 	margin-left: 100px;
 	margin-right: 100px;
-	border-radius: 0px 0px 25px 25px;
+    border-radius: 25px 25px 25px 25px;
+    height: 60px;
 }
 
 .menu>li {
 	float: left;
-	position: relative;
+    position: relative;
+    
 }
+
 .menu li{
 	border-radius: 0px 0px 25px 25px;
 }
@@ -71,7 +113,7 @@ nav {
 	right: 0;
 	position: absolute;
 }
-.menu>li:nth-child(5)::after{
+.menu>li:nth-child(6)::after{
 	content: "";
 	background-color: rgba(0, 0, 0, 0.1);
 	height: 40px;
@@ -87,73 +129,101 @@ nav {
 	border-radius: 0px 0px 25px 25px;
 	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
 }
-.menu>li:nth-child(5){
+.menu>li:nth-child(6){
 	float: right;
 }
-.menu>li:nth-child(5)>a>span{
-	position: absolute;
-	margin-left: 40px;
-	top: 36px;	
+/* .menu>li:nth-child(6)>a>span{
+	display: block; 
+    position: relative;
+    margin-left: 0px;
+	top:46px;	
 	font-size: 32px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
+	width: auto;
+	height: 14px;
+	border-radius: 0 0 25% 25%;
 	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
 	transition: transform 0.25s;
 	z-index: 102;
-	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
-}
+    box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+   
+} */
+
+/* .menu>li:nth-child(3)>a>span{
+    display: block; 
+    position: relative;
+    margin-left: 0px;
+    left: 0;
+	top:46px;	
+	font-size: 32px;
+	width: auto;
+	height: 14px;
+	border-radius: 0 0 25% 25%;
+	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
+	transition: transform 0.25s;
+	z-index: 102;
+    box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+   
+} */
 .menu>li:nth-child(3)>a>span{
-	position: absolute;
-	margin-left: 12px;
-	top: 36px;	
+    /* display: block;  */
+    position: relative;
+    top:0px;
+    left: -10px;	
 	font-size: 32px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
-	transition: transform 0.25s;
+	/* width: auto;
+	height: 14px; */
 	z-index: 102;
-	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+}
+.menu>li:nth-child(6)>a>span{
+    /* display: block;  */
+    position: relative;
+    top:0px;
+    left: -10px;	
+	font-size: 32px;
+	/* width: auto;
+	height: 14px; */
+	z-index: 102;
 }
 .menu>li>a{
-
+   
 	color: #444;
 	display: block;
-	width: auto;
 	font-size: 20px;
-	line-height: 20px;
+    width: 10vw;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	padding-left: 2.3vw;
-	padding-right: 2.3vw;
 	/* vertical-align: middle; */
     text-decoration: none;
-	/* position: relative; */
+	position: relative;
 	text-transform: uppercase;
 	text-align: center;	
+}
+.menu>li:nth-child(3){
+    width: auto;
+}
+.menu>li:nth-child(6){
+    width: auto;
 }
 .menu>li>ul>li>a{
 	color: #444;
 	display: block;
-	width: auto;
+	/* width: auto; */
 	font-size: 20px;
 	line-height: 20px;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	padding-left: 3vw;
-	padding-right: 3vw;
 	/* vertical-align: middle; */
     text-decoration: none;
 	/* position: relative; */
 	text-transform: uppercase;
-	text-align: center;	
+    text-align: center;	
+   
+}
+.menu>li>ul {
+    position: relative;
+    width: auto;
 }
 
-
-.menu li a:active{
-	background-color: rgba(255, 255, 255, 0.5);
-}
 
 .menu li a:hover {
 	
@@ -164,7 +234,7 @@ nav {
 /* Dropdown styles */
 
 .menu ul {
-	position: absolute;
+	position: relative;
 	/* left: -9999px; */
 	list-style: none;
 	opacity: 0;
@@ -179,21 +249,21 @@ nav {
 	
 } */
 
-.menu ul a {
+/* .menu ul a {
 	white-space: nowrap;
 	
 }
-
+ */
 /*//////////////////////////// Displays the dropdown on hover and moves back into position////////////////////////// */
 .menu li:hover ul {
-	background:-webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(204, 204, 204, 0.7)));               /* rgba(255,255,255,0.7); */
+	background:-webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(204, 204, 204, 0.7)));              
 	border-radius: 0 0 6px 6px;
 	left: 5px;
 	opacity: 1;
-	height: auto;
-	transition: height 0.5s, opacity 0.5s ease;
+    height: auto;
+    transition: height 0.5s, opacity 0.5s ease;
 }
-.menu>li:nth-child(5):hover>a>span{
+.menu>li:nth-child(6):hover>a>span{
 		transform: translateY(104px)
 }
 .menu>li:nth-child(3):hover>a>span{
@@ -209,11 +279,11 @@ nav {
 	
 }
 .menu li:hover{
-	background-color:rgba(128, 128, 128, 0.7);
+	background-color:rgba(0, 0, 0, 0.2);
 	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.178);
 }
 .menu li:hover ul a {
-	background: none;
+	/* background: none; */
 	border-radius: 0;
 	box-shadow: none;
 }
@@ -253,7 +323,7 @@ nav {
 	}
 	#togglecheckbox:checked ~ .menu li::before{
 		content: "";
-		width: 1200px;
+		width: auto;
 		height: 1px;
 		display: block;
 		position: relative;
@@ -267,15 +337,24 @@ nav {
 	}
 	nav{
 		background-color: rgb(220, 220, 220);
-		margin: 0;
-	}
-	.menu>li:nth-child(5):hover>a>span{
-		transform: translateY(124px)
+        margin: 0;
+        width: auto;
+        
+    }
+    
+	.menu>li:nth-child(6):hover>a>span{
+		transform: translateY(60px)
 	}
 	.menu>li:nth-child(3):hover>a>span{
 	transform: translateY(114px)
 	}
-	
+	.menu>li>a{
+
+       width: 100vw;
+      
+        text-align: center;	
+    }
+
 	.menu>li::after{
 		content: "";
 		display: none;
@@ -302,17 +381,19 @@ nav {
 		border-radius: 0 0 0 0 ;
 		position: static;
 	}
-	.menu li:hover ul{
-		height: 140px;
-	}
-	.menu>li:nth-child(5)>a{
+	
+	.menu>li:nth-child(6)>a{
 		padding-bottom: 28px;
-	}
+    }
+    .menu>li:nth-child(6):hover>a{
+        height: 100px;
+    }
 	.menu{
 		height: 0;
 		overflow: hidden;
-		transition: height 1s cubic-bezier(0.23, 1, 0.320, 1) ;
-		
+        transition: height 1s cubic-bezier(0.23, 1, 0.320, 1) ;
+        background-image: linear-gradientrgba( rgba(255, 255, 255, 0.8), (rgba(204, 204, 204, 0.8)));
+		background: -webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(204, 204, 204, 0.8)));
 	}
 	
 	.menu ul {
@@ -623,19 +704,79 @@ nav {
     background:rgb(255, 94, 0);
     color: rgb(255, 94, 0);
 }
-/*////////////////////////////background/////////////////////////*
+/*////////////////////////////Content Areas////////////////////////*/
+
 #header{
-    background-image: url('../imgs/img1.jpg');
-    width: 100%;
-    height: 120vh;
-    position: absolute;
+    /* background-image: url('../imgs/img1.jpg'); */
+
+    height: 80vh;
+    background-color: rgb(173, 243, 255);
+    /* position: absolute ; */
     top: 0;
     left: 0;
     scroll-behavior: smooth;
 
 }
-body {
-	
-	font-family: 'Droid Sans', sans-serif;;
+#about{
+    position: absolute;
+    height: 50vh;
+    background-color: rgb(173, 255, 230);
+   /*  position: relative; */
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+#team{
+    height: 50vh;
+    background-color: rgb(173, 188, 255);
+    position: relative;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+#contact{
+    height: 50vh;
+    background-color: rgb(255, 247, 173);
+    position: relative;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+#goals{
+    height: 50vh;
+    background-color: rgb(203, 255, 173);
+    position: relative;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+/* /////////////////////////Style of Content Areas////////////////////// */
 
+.gridContainer div>span{
+    font-size: 34px;
+    text-align: center;
+   
+}
+
+.gridContainer div span::before{
+    content: "";
+    width: 40vw;
+    height: 4px;
+    border-radius: 25%;
+    background-color: #444;
+    display: block;
+    top: 16px;
+    right: 58vw;
+    position: absolute;
+}
+.gridContainer div span::after{
+    content: "";
+    width: 40vw;
+    height: 4px;
+    border-radius: 25%;
+    background-color: #444;
+    display: block;
+    top: 16px;
+    left: 58vw;
+    position: absolute;
 }

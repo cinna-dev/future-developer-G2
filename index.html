@@ -14,48 +14,53 @@
   
 
 <body>
+  <!-- ///////////////////////////Language switcher/////////////////////////////// -->
+    <input type="radio" id="languageEn" name="language">
+    <input type="radio" id="languageDe" name="language">
+  
 <!-- ///////////////////////////navbar/////////////////////////// -->
+<div id="header" class="gcol-1-24"></div>  
+
 <nav>
-	<input  type="checkbox"  id="togglecheckbox">
+	  <input  type="checkbox"  id="togglecheckbox">
 		<div class="togglelabel" >
 			<label class="fa fa-align-justify" style="font-size:24px"  for="togglecheckbox"></label> 
 		</div>
 		<ul class="menu">
 			<li><a href="#"> Home</a></li>
-			<li><a href="#about"> About</a></li>
-			<li><a href="#team"><span class="fa fa-angle-double-down"></span> Team</a>
+			<li><a href="#about"> <p lang="en">About</p><p lang="de">Über</p></a></li>
+			<li><a><span class="fa fa-angle-double-down" ></span> Team </a>
 				<ul>
-					<li><a href="#">Placeholder</a></li>
-					<li><a href="#">Placeholder</a></li>
+					<li><a href="#team">Placeholder</a></li>
+					<li><a href="#team">Placeholder</a></li>
 				</ul>
 			</li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#team"><span class="fa fa-angle-double-down"></span> Language</a>
+			<li><a href="#goals"><p lang="en">Goals</p><p lang="de">Ziele</p></a></li>
+			<li><a href="#contact"><p lang="en">Contact</p><p lang="de">Kontakt</p> </a></li>
+			<li><a><span class="fa fa-angle-double-down" ></span> <p lang="en">Language</p><p lang="de">Sprachen</p></a>
 				<ul>
-					<li><a href="#">English</a></li>
-					<li><a href="#">Deutsch</a></li>
+					<li><label for="languageEn"><p lang="en">English</p><p lang="de">Englisch</p></label><!-- <a id="en">English</a> --></li>
+					<li><label for="languageDe"><p lang="en">German</p><p lang="de">Deutsch</p></label><!-- <a id="de">German</a> --></li>
 				</ul>
 			</li>
-			<li><a href="#Goas">Goals</a></li>
 		</ul>
 		<div class="clearfix"></div>
 	</nav>
-    
-   <!--  <div id="header"></div>
+  <div class="gridContainer">  
+  
 	
-	<div id="about">About</div>
+	<div id="about" class="gcol-1-24"><span><p>About</p></span></div>
 	
-	<div id="team">Team</div>
+	
 
-	<div id="contact">Contact</div>
-    <p>sdf</p> -->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+
   
 <!--   ///////////////////////////////////////// slideshow////////////////////////////////////////////////////-->
     <!-- zuerst das Sichtfenster -->
-     <div class="gridContainer">
-    <div class="O-Slider gcol-1-24 ">
- 
+    
+    <div id="team" class="O-Slider gcol-1-24 ">
+ 	<span><p>Team</p></span>
       <!-- die inputs um den Slider zu Steuern -->
       <input type="radio" name="slider" id="slide01" checked="checked"> 
       <input type="radio" name="slider" id="slide02">
@@ -174,6 +179,9 @@
           <li><label for="slide04">4</label></li>
       </ul>
   </div>
+  <div id="goals" class="gcol-1-24"><span><p>Goals</p></span></div>
+  <div id="contact" class="gcol-1-24"><span><p>Contact</p></span></div>
+  
 </div>      
   
 </body>
