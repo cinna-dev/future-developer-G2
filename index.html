@@ -21,36 +21,41 @@
 ///////////////////////////////////            navbar         //////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-  <body>
-    <!-- ///////////////////////////navbar/////////////////////////// -->
-    <nav>
-      <input type="checkbox" id="togglecheckbox" />
-      <div class="togglelabel">
-        <label class="fa fa-align-justify" style="font-size:24px" for="togglecheckbox"></label></div>
-      <ul class="menu">
-        <li><a href="#"> Home</a></li>
-        <li><a href="#about"> About</a></li>
-        <li>
-          <a href="#team"><span class="fa fa-angle-double-down"></span> Team</a>
-          <ul>
-            <li><a href="#">Placeholder</a></li>
-            <li><a href="#">Placeholder</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="#team"
-            ><span class="fa fa-angle-double-down"></span> Language</a
-          >
-          <ul>
-            <li><a href="#">English</a></li>
-            <li><a href="#">Deutsch</a></li>
-          </ul>
-        </li>
-        <li><a href="#Goas">Goals</a></li>
-      </ul>
-      <div class="clearfix"></div>
-    </nav>
+<div id="header" class="gcol-1-24"></div>  
+
+<nav>
+	  <input  type="checkbox"  id="togglecheckbox">
+		<div class="togglelabel" >
+			<label class="fa fa-align-justify" style="font-size:24px"  for="togglecheckbox"></label> 
+		</div>
+		<ul class="menu">
+			<li><a href="#"> Home</a></li>
+			<li><a href="#about"> <p lang="en">About</p><p lang="de">Über</p></a></li>
+			<li><a> <span class="	fa fa-angle-down "> </span> Team </a>
+				<ul>
+					<li><a href="#team">Placeholder</a></li>
+          <li><a href="#team">Placeholder</a></li>,
+				</ul>
+			</li>
+			<li><a href="#goals"><p lang="en">Goals</p><p lang="de">Ziele</p></a></li>
+			<li><a href="#contact"><p lang="en">Contact</p><p lang="de">Kontakt</p> </a></li>
+			<li><a><span class="fa fa-angle-down" ></span> <p lang="en">Language</p><p lang="de">Sprachen</p></a>
+				<ul>
+					<li><label for="languageEn"><p lang="en">English</p><p lang="de">Englisch</p></label><!-- <a id="en">English</a> --></li>
+					<li><label for="languageDe"><p lang="en">German</p><p lang="de">Deutsch</p></label><!-- <a id="de">German</a> --></li>
+				</ul>
+			</li>
+		</ul>
+	<!-- 	<div class="clearfix"></div> -->
+	</nav>
+ 
+  <div class="gridContainer">  
+	<div class="gcol-1-24" id="animation"> </div>
+	<div id="about" class="gcol-1-24"><span><p>About</p></span></div>
+	
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////  
+   ///////////////////////////////      slideshow      ///////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <div class="OO-container"> 
 
@@ -338,7 +343,7 @@
           <li><label for="slide04">4</label></li>
           <li><label for="slide05">5</label></li>
 
-  
+</div>
 
 	
 <!-- ////////////////////////////////////////////////////////////////////////////////////
@@ -387,7 +392,7 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
     <div class="to-top-container">
       <a href="#" class="to-top"> <img src="./gallery/arrow.svg" /> </a>
