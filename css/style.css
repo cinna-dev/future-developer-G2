@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
    margin: 0;
@@ -6,19 +5,20 @@
    border: 0;
    font-size: 100%;
 }
+
 /* ////////////////////////////////navbar////////////////////////////// */
 html{
     scroll-behavior: smooth;      /* importantt for smooth scroll */
-    color: -internal-root-color;
+    /* color: -internal-root-color; */
+
         
 }
-body{
-    font-family: 'Droid Sans', sans-serif;
-}
+
 ul{
 	list-style: none;
 	display: block;
 }
+
 
 
 table{
@@ -31,17 +31,18 @@ table{
 --------------------------------------------------------------------*/
 
 
-
 .clearfix {
 	clear: both;
 }
 
 
 nav {
-	background: -webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(204, 204, 204, 0.8)));
-	background-image: linear-gradientrgba( rgba(255, 255, 255, 0.8), (rgba(204, 204, 204, 0.8)));
+  font-family: 'Droid Sans', sans-serif;
+    /* background: -webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(204, 204, 204, 0.8))); */
+    background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(39, 39, 39, 0.9)));
+	/* background-image: linear-gradientrgba( rgba(255, 255, 255, 0.8), (rgba(204, 204, 204, 0.8))); */
 	/* border-radius: 6px; */
-	box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
     padding: 0 10px;
     position: sticky;
     position: -webkit-sticky;
@@ -50,16 +51,23 @@ nav {
 	z-index: 100;
 	margin-left: 100px;
 	margin-right: 100px;
-	border-radius: 0px 0px 25px 25px;
+    border-radius: 5px 5px 5px 5px;
+    height: 60px;
 }
-
+.menu{
+    position: absolute;
+}
 .menu>li {
 	float: left;
-	position: relative;
+    position: relative;
+    
 }
+
 .menu li{
-	border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 25px 25px;
+    
 }
+ 
 .menu>li::after{
 	content: "";
 	background-color: rgba(0, 0, 0, 0.1);
@@ -72,7 +80,7 @@ nav {
 	right: 0;
 	position: absolute;
 }
-.menu>li:nth-child(5)::after{
+.menu>li:nth-child(6)::after{
 	content: "";
 	background-color: rgba(0, 0, 0, 0.1);
 	height: 40px;
@@ -84,81 +92,133 @@ nav {
 	left: 0;
 	position: absolute;
 }
-.menu>li>ul{
-	border-radius: 0px 0px 25px 25px;
-	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
-}
-.menu>li:nth-child(5){
-	float: right;
-}
-.menu>li:nth-child(5)>a>span{
-	position: absolute;
-	margin-left: 40px;
-	top: 36px;	
-	font-size: 32px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
-	transition: transform 0.25s;
-	z-index: 102;
-	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+
+.menu>li:nth-child(6){
+    float: right;
+    
+    /* margin-left: 380px; */
 }
 .menu>li:nth-child(3)>a>span{
-	position: absolute;
-	margin-left: 12px;
-	top: 36px;	
+    transition: opacity 0.5s;
+}
+/* .menu>li:nth-child(6)>a>span{
+	display: block; 
+    position: relative;
+    margin-left: 0px;
+	top:46px;	
 	font-size: 32px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
+	width: auto;
+	height: 14px;
+	border-radius: 0 0 25% 25%;
 	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
 	transition: transform 0.25s;
 	z-index: 102;
-	box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+    box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+   
+} */
+.menu>li:nth-child(6)>a>span{
+    transition: opacity 0.5s;
 }
-.menu>li>a{
-
-	color: #444;
-	display: block;
+/* .menu>li:nth-child(3)>a>span{
+    display: block; 
+    position: relative;
+    margin-left: 0px;
+    left: 0;
+	top:46px;	
+	font-size: 32px;
 	width: auto;
+	height: 14px;
+	border-radius: 0 0 25% 25%;
+	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
+	transition: transform 0.25s;
+	z-index: 102;
+    box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+   
+} */
+.menu>li:nth-child(3)>a>span{
+   /*  display: block;  */
+    float: right;
+    position: relative;
+    bottom:5px;
+    right: 20px;
+	font-size: 34px;
+
+	
+}
+.menu>li:nth-child(6)>a>span{
+    /* display: block;  */
+    float: right;
+    position: relative;
+    bottom:5px;
+    left: 20px;
+	font-size: 34px;
+}
+.subNav>li>a{
+    float: left;
+}
+
+.menu>li>a{
+	color: white;
+	display: block;
 	font-size: 20px;
-	line-height: 20px;
+    width: 10vw;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	padding-left: 2.3vw;
-	padding-right: 2.3vw;
 	/* vertical-align: middle; */
     text-decoration: none;
-	/* position: relative; */
+	position: relative;
 	text-transform: uppercase;
 	text-align: center;	
+}
+.menu>li:nth-child(3){
+    width: auto;
+}
+.menu>li:nth-child(6){
+    width: auto;
 }
 .menu>li>ul>li>a{
-	color: #444;
-	display: block;
-	width: auto;
+	color:  white;
+    display: block;
+	/* width: auto; */
 	font-size: 20px;
 	line-height: 20px;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	padding-left: 3vw;
-	padding-right: 3vw;
 	/* vertical-align: middle; */
     text-decoration: none;
 	/* position: relative; */
 	text-transform: uppercase;
-	text-align: center;	
+    text-align: center;	
+   
+}
+.menu>li>ul>li>label{
+	color:  white;
+    display: block;
+	/* width: auto; */
+	font-size: 20px;
+	line-height: 20px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	/* vertical-align: middle; */
+    text-decoration: none;
+	/* position: relative; */
+	text-transform: uppercase;
+    text-align: center;	
+}
+.menu>li>ul {
+   position: absolute;
+    width: 100%;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+    
 }
 
-
-.menu li a:active{
-	background-color: rgba(255, 255, 255, 0.5);
-}
 
 .menu li a:hover {
+
 	
 	text-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+
 
 
 }
@@ -166,15 +226,14 @@ nav {
 /* Dropdown styles */
 
 .menu ul {
-
-	position: absolute;
+	position: relative;
 	/* left: -9999px; */
 	list-style: none;
 	opacity: 0;
 	height: 0;
 	overflow: hidden;
 	display: block;
-	
+
 }
 
 /* .menu ul li {
@@ -182,49 +241,46 @@ nav {
 	
 } */
 
-.menu ul a {
-
+/* .menu ul a {
 	white-space: nowrap;
 	
 
-}
 
+}
+ */
 /*//////////////////////////// Displays the dropdown on hover and moves back into position////////////////////////// */
 .menu li:hover ul {
-
-	background:-webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(204, 204, 204, 0.7)));               /* rgba(255,255,255,0.7); */
-	border-radius: 0 0 6px 6px;
+    /* background:-webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(204, 204, 204, 0.7)));      */         
+    background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(39, 39, 39, 0.9)));
+	border-radius: 0 0 10px 10px;
 	left: 5px;
 	opacity: 1;
-	height: auto;
-	transition: height 0.5s, opacity 0.5s ease;
+    height: auto;
+    transition: height 0.5s, opacity 0.5s ease;
 }
-.menu>li:nth-child(5):hover>a>span{
-		transform: translateY(104px)
+.menu>li:nth-child(6):hover>a>span{
+		opacity: 0;
 }
 .menu>li:nth-child(3):hover>a>span{
-	transform: translateY(104px)
+	opacity: 0;
 }
 /*////////////////////////////////////////// Persistant Hover State //////////////////////////////////////////*/
+
 .menu li:hover >a {
-	
-	
-	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
-	/* color: #222; */
-	color: white;
-	
+    color: black;
 }
 .menu li:hover{
-	background-color:rgba(128, 128, 128, 0.7);
-	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.178);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.178);
+    background-color: rgba(255, 166, 0, 0.568);
 }
+
 .menu li:hover ul a {
-	background: none;
+	/* background: none; */
 	border-radius: 0;
-	box-shadow: none;
 }
 
 .menu li:hover ul li a:hover {
+
 	
 	text-shadow:  0px 0px 4px 2px rgba(0,0,0,0.3);
 	
@@ -233,6 +289,7 @@ nav {
 #togglecheckbox{
 	display: none;
 	}
+
 	
 .togglelabel{
 	top: 20px;
@@ -242,10 +299,12 @@ nav {
 	display: none;
 	margin: 10px;	
 }
+
 .togglelabel>label{
 	transition: transform 0.25s;
 	color: rgba(0, 0, 0, 0.8);
 }
+
 #togglecheckbox:checked ~ .menu{
 	height: auto;
 }
@@ -258,13 +317,15 @@ nav {
 		height: auto;
 	}
 	#togglecheckbox:checked ~ .menu li::before{
+
 		content: "";
-		width: 1200px;
+		width: auto;
 		height: 1px;
 		display: block;
 		position: relative;
 		background-color: black;
 		z-index: 101;
+
 	}
 	#togglecheckbox:checked + div>label{
 		color: rgba(255, 255, 255, 0.9);
@@ -272,16 +333,24 @@ nav {
 		background-color: rgba(0, 0, 0, 0.3);
 	}
 	nav{
-		background-color: rgb(220, 220, 220);
-		margin: 0;
-	}
-	.menu>li:nth-child(5):hover>a>span{
-		transform: translateY(124px)
+       
+        margin: 0;
+        width: auto;
+        
+    }
+    
+	/* .menu>li:nth-child(6):hover>a>span{
+		transform: translateY(60px)
 	}
 	.menu>li:nth-child(3):hover>a>span{
 	transform: translateY(114px)
-	}
-	
+	} */
+	.menu>li>a{
+
+       width: 100vw;
+       text-align: center;	
+    }
+
 	.menu>li::after{
 		content: "";
 		display: none;
@@ -292,33 +361,35 @@ nav {
 	} */
 	.menu li{
 		width: 100%;
-		height: auto;
+        height: auto;
+        
 		}
 	.menu li ul li{
-			width: auto;
-			}	
+        text-align: center;
+        width: auto;   
+    }	
 			
-	.menu li ul{
+	.menu>li>ul{
+        position: relative;
 		list-style-type: none;
-		height: 0;
 		transition:  height 2s;
-		overflow: hidden;
-		display: block;
+		/* overflow: hidden;
+		display: block; */
 		width:100% ;
 		border-radius: 0 0 0 0 ;
-		position: static;
 	}
-	.menu li:hover ul{
-		height: 140px;
-	}
-	.menu>li:nth-child(5)>a{
+	
+	.menu>li:nth-child(6)>a{
 		padding-bottom: 28px;
-	}
+    }
+    .menu>li:nth-child(6):hover>a{
+        height: 100px;
+    }
 	.menu{
 		height: 0;
 		overflow: hidden;
-		transition: height 1s cubic-bezier(0.23, 1, 0.320, 1) ;
-		
+        transition: height 1s cubic-bezier(0.23, 1, 0.320, 1) ;
+        background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.8)), to(rgba(39, 39, 39, 0.8)));
 	}
 	
 	.menu ul {
@@ -527,48 +598,40 @@ h1.main, p.demos {
 /*///////////////////slideshow ///////////////////*/
 
 
-
 .tm-gallery-item figure {
     position: relative;
     float: left;
     overflow: hidden;
-    /* margin-bottom: 0; */
-    /* background: #3085a3; */
-    text-align: center;
-    cursor: pointer;
-    
-    
-  }
 
+    text-align: center;
+	cursor: pointer;  
+	
+}
   
-  .tm-gallery-item figure img {
+.tm-gallery-item figure img {
     position: relative;
     display: block;
-    max-height: 400px;
-    max-width: 600px;
-    opacity: 0.8;
-    
-    
-   
-  }
+    height: 400px;
+    max-width: 300px;
+	opacity: 0.8;
+	
+}
   
-  .tm-gallery-item figure figcaption {
-    padding: 1em;
+.tm-gallery-item figure figcaption {
+    padding: 10px;
     color: rgb(255, 255, 255);
-    /* text-transform: uppercase; */
     font-size: 1.25em;
     backface-visibility: hidden;
-    
-  }
+}
   
-  .tm-gallery-item figure figcaption::before,
-  .tm-gallery-item figure figcaption::after {
+.tm-gallery-item figure figcaption::before,
+.tm-gallery-item figure figcaption::after {
     pointer-events: none;
-    
-  }
+}
   
-  .tm-gallery-item figure figcaption,
-  .tm-gallery-item figure figcaption> a {
+.tm-gallery-item figure figcaption,
+.tm-gallery-item figure figcaption> a {
+
     position: absolute;
     top: 0;
     left: 0;
@@ -577,16 +640,19 @@ h1.main, p.demos {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     
   }
   
   /* Anchor will cover the whole item by default */
   /* For some effects it will show as a button */
   .tm-gallery-item figure figcaption > a {
+
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
+
     opacity: 0;
     
   }
@@ -633,12 +699,14 @@ h1.main, p.demos {
   
   .effect-bubba figcaption::before,
   .effect-bubba figcaption::after {
+
     position: absolute;
     top: 15px;
     right: 15px;
     bottom: 15px;
     left: 15px;
-    border-radius: 25px;
+
+    border-radius: 20px;
     content: "";
     opacity: 0;
     transition: opacity 2s, transform 2s;
@@ -659,64 +727,62 @@ h1.main, p.demos {
   } 
   
   figure.effect-bubba h2 {
+
     font-size: 1.5rem;
     margin-bottom: 20px;
     opacity: 0;
     transition: transform 1s;
     transform: translate3d(0, -30px, 0);
-  }
+
+}
   
-  figure.effect-bubba p {
+figure.effect-bubba p {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     opacity: 0;
     transition: opacity 3s, transform 3s;
     transform: translate3d(0, 340px, 0);
-  }
+}
   
-  figure.effect-bubba:hover figcaption::before,
-  figure.effect-bubba:hover figcaption::after {
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
     opacity: 1;
     transform: scale(1);
-  }
+}
   
-  figure.effect-bubba:hover h2,
-  figure.effect-bubba:hover p {
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
     opacity: 1;
     transform: translate3d(0, 0, 0);
-  }
+}
   
-
-
-
-
-
-  .O-sliderElements,
+.O-sliderElements,
 .O-sliderElements figure,
 .sliderControls {
-  
-    margin-left: 10px;
+
+	margin-left: 10px;
     margin-top: 5px;
-    margin-right: 0;
+	margin-right: 5px;
+	margin-bottom: 70px;
 
 }
  
 .O-sliderElements:after {
     content: ".";
     display: block;
-    height: .1px;
-    clear: both;
+    height: 0;
+    /*clear: both;*/
     visibility: hidden;
     font-size: 0;
-    overflow: hidden;
+	overflow: hidden;
 }
  
 .O-Slider {
+	background: linear-gradient(rgb(48, 39, 39), rgb(65, 55, 55));
     overflow-x: hidden;
     /* margin-left: 150px; */
     /* background-color: #333; */
 
-    
 }
  
 .O-sliderElements {
@@ -729,10 +795,7 @@ h1.main, p.demos {
     transition: left 2s ease-in-out;
     margin-left: 145px;
     margin-top: 60px;
-    
-    
-    
-    
+
 }
  
 .O-sliderElements > li {
@@ -768,33 +831,30 @@ h1.main, p.demos {
     left: 0;
     bottom: 1em;
     padding: .4em;
-    background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.5);
+}
 
-    
-    
-} */
-
+ */
  
 /* Bilder responsive */
+
+
 .O-sliderElements img {
     width: 100%;
     height: auto;
-    
 }
  
- 
-/* inputs aus dem Blickfeld schieben */
 .O-Slider input {
     position: absolute;
     left: -99999px;
-    
 }
  
-/* mittige Ausrichtung der Controls - funktioniert im Zusammenspiel mit inline-block */
+
 .sliderControls {
     text-align: center;
 }
  
+
 /* Controls nebeneinander bringen */
 .sliderControls li {
     display: inline-block;
@@ -802,6 +862,7 @@ h1.main, p.demos {
 }
  
 /* Controls auf einheitliche Maße bringen und die Ecken abrunden */
+
 .sliderControls label {
     width: 20px;
     height: 20px;
@@ -811,13 +872,12 @@ h1.main, p.demos {
     border-radius: 50%;
     display: block;
     cursor: pointer;
-    background: #68B022;
-    color: #68B022;
-    
-}
- 
 
-/* Attributselektor und indirekter Nachfahrkombinator zum ansteuern der labels */
+    background: black; 
+    color: black;   
+}
+
+
 .sliderControls label:hover,
 #slide01:checked ~ .sliderControls label[for="slide01"],
 #slide02:checked ~ .sliderControls label[for="slide02"],
@@ -828,7 +888,10 @@ h1.main, p.demos {
   background: rgb(255, 94, 0);
   color: rgb(255, 94, 0);
 }
-/*////////////////////////////background/////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////
+////////////////////////         Footer  Area        ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////*/
 
 .footer {
   position: relative;
@@ -987,20 +1050,80 @@ h1.main, p.demos {
   }
 
 }
-/*////////////////////////////background/////////////////////////*
+
+/* ////////////////////////////background//////////////////////// */
 #header{
-    background-image: url('../imgs/img1.jpg');
-    width: 100%;
-    height: 120vh;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)), url('../img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 30vh;
     scroll-behavior: smooth;
 
 }
-body {
-	
-	font-family: 'Droid Sans', sans-serif;;
+#about{
+    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)), url('../img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+#team{
+    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)), url('../img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+#contact{
+    height: 50vh;
+    background-color: rgb(136, 131, 90);
+    position: relative;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+#goals{
+    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)), url('../img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+/*  /////////////////////////Style of Content Areas//////////////////////  */
 
+.gridContainer div>span{
+    font-size: 34px;
+    text-align: center;
+   
+}
 
+.gridContainer div span::before{
+    content: "";
+    width: 40vw;
+    height: 4px;
+    border-radius: 25%;
+    background-color: #444;
+    display: block;
+    top: 16px;
+    right: 58vw;
+    position: absolute;
+}
+.gridContainer div span::after{
+    content: "";
+    width: 40vw;
+    height: 4px;
+    border-radius: 25%;
+    background-color: #444;
+    display: block;
+    top: 16px;
+    left: 58vw;
+    position: absolute;
 }
