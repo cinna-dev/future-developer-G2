@@ -13,13 +13,12 @@ html{
 
         
 }
-body{
-    font-family: 'Droid Sans', sans-serif;
-}
+
 ul{
 	list-style: none;
 	display: block;
 }
+
 
 
 table{
@@ -32,13 +31,13 @@ table{
 --------------------------------------------------------------------*/
 
 
-
 .clearfix {
 	clear: both;
 }
 
 
 nav {
+  font-family: 'Droid Sans', sans-serif;
     /* background: -webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(204, 204, 204, 0.8))); */
     background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(39, 39, 39, 0.9)));
 	/* background-image: linear-gradientrgba( rgba(255, 255, 255, 0.8), (rgba(204, 204, 204, 0.8))); */
@@ -68,6 +67,7 @@ nav {
     border-radius: 0px 0px 25px 25px;
     
 }
+ 
 .menu>li::after{
 	content: "";
 	background-color: rgba(0, 0, 0, 0.1);
@@ -156,6 +156,7 @@ nav {
 .subNav>li>a{
     float: left;
 }
+
 .menu>li>a{
 	color: white;
 	display: block;
@@ -214,8 +215,10 @@ nav {
 
 
 .menu li a:hover {
+
 	
 	text-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+
 
 
 }
@@ -230,7 +233,7 @@ nav {
 	height: 0;
 	overflow: hidden;
 	display: block;
-	
+
 }
 
 /* .menu ul li {
@@ -241,6 +244,7 @@ nav {
 /* .menu ul a {
 	white-space: nowrap;
 	
+
 
 }
  */
@@ -261,6 +265,7 @@ nav {
 	opacity: 0;
 }
 /*////////////////////////////////////////// Persistant Hover State //////////////////////////////////////////*/
+
 .menu li:hover >a {
     color: black;
 }
@@ -268,12 +273,14 @@ nav {
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.178);
     background-color: rgba(255, 166, 0, 0.568);
 }
+
 .menu li:hover ul a {
 	/* background: none; */
 	border-radius: 0;
 }
 
 .menu li:hover ul li a:hover {
+
 	
 	text-shadow:  0px 0px 4px 2px rgba(0,0,0,0.3);
 	
@@ -282,6 +289,7 @@ nav {
 #togglecheckbox{
 	display: none;
 	}
+
 	
 .togglelabel{
 	top: 20px;
@@ -291,10 +299,12 @@ nav {
 	display: none;
 	margin: 10px;	
 }
+
 .togglelabel>label{
 	transition: transform 0.25s;
 	color: rgba(0, 0, 0, 0.8);
 }
+
 #togglecheckbox:checked ~ .menu{
 	height: auto;
 }
@@ -307,6 +317,7 @@ nav {
 		height: auto;
 	}
 	#togglecheckbox:checked ~ .menu li::before{
+
 		content: "";
 		width: auto;
 		height: 1px;
@@ -314,6 +325,7 @@ nav {
 		position: relative;
 		background-color: black;
 		z-index: 101;
+
 	}
 	#togglecheckbox:checked + div>label{
 		color: rgba(255, 255, 255, 0.9);
@@ -365,7 +377,6 @@ nav {
 		display: block; */
 		width:100% ;
 		border-radius: 0 0 0 0 ;
-
 	}
 	
 	.menu>li:nth-child(6)>a{
@@ -397,48 +408,40 @@ nav {
 /*///////////////////slideshow ///////////////////*/
 
 
-
 .tm-gallery-item figure {
     position: relative;
     float: left;
     overflow: hidden;
-    /* margin-bottom: 0; */
-    /* background: #3085a3; */
-    text-align: center;
-    cursor: pointer;
-    
-    
-  }
 
+    text-align: center;
+	cursor: pointer;  
+	
+}
   
-  .tm-gallery-item figure img {
+.tm-gallery-item figure img {
     position: relative;
     display: block;
-    max-height: 400px;
-    max-width: 600px;
-    opacity: 0.8;
-    
-    
-   
-  }
+    height: 400px;
+    max-width: 300px;
+	opacity: 0.8;
+	
+}
   
-  .tm-gallery-item figure figcaption {
-    padding: 1em;
+.tm-gallery-item figure figcaption {
+    padding: 10px;
     color: rgb(255, 255, 255);
-    /* text-transform: uppercase; */
     font-size: 1.25em;
     backface-visibility: hidden;
-    
-  }
+}
   
-  .tm-gallery-item figure figcaption::before,
-  .tm-gallery-item figure figcaption::after {
+.tm-gallery-item figure figcaption::before,
+.tm-gallery-item figure figcaption::after {
     pointer-events: none;
-    
-  }
+}
   
-  .tm-gallery-item figure figcaption,
-  .tm-gallery-item figure figcaption> a {
+.tm-gallery-item figure figcaption,
+.tm-gallery-item figure figcaption> a {
+
     position: absolute;
     top: 0;
     left: 0;
@@ -447,16 +450,19 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     
   }
   
   /* Anchor will cover the whole item by default */
   /* For some effects it will show as a button */
   .tm-gallery-item figure figcaption > a {
+
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
+
     opacity: 0;
     
   }
@@ -503,11 +509,13 @@ nav {
   
   .effect-bubba figcaption::before,
   .effect-bubba figcaption::after {
+
     position: absolute;
     top: 15px;
     right: 15px;
     bottom: 15px;
     left: 15px;
+
     border-radius: 20px;
     content: "";
     opacity: 0;
@@ -529,87 +537,83 @@ nav {
   } 
   
   figure.effect-bubba h2 {
+
     font-size: 1.5rem;
     margin-bottom: 20px;
     opacity: 0;
     transition: transform 1s;
     transform: translate3d(0, -30px, 0);
-  }
+
+}
   
-  figure.effect-bubba p {
+figure.effect-bubba p {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     opacity: 0;
     transition: opacity 3s, transform 3s;
     transform: translate3d(0, 340px, 0);
-  }
+}
   
-  figure.effect-bubba:hover figcaption::before,
-  figure.effect-bubba:hover figcaption::after {
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
     opacity: 1;
     transform: scale(1);
-  }
+}
   
-  figure.effect-bubba:hover h2,
-  figure.effect-bubba:hover p {
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
     opacity: 1;
     transform: translate3d(0, 0, 0);
-  }
+}
   
-
-
-
-
-
-  .O-sliderElements,
+.O-sliderElements,
 .O-sliderElements figure,
 .sliderControls {
-  
-    margin-left: 10px;
+
+	margin-left: 10px;
     margin-top: 5px;
-    margin-right: 0;
+	margin-right: 5px;
+	margin-bottom: 70px;
 
 }
  
 .O-sliderElements:after {
     content: ".";
     display: block;
-    height: .1px;
-    clear: both;
+
+    height: 0;
+    /*clear: both;*/
     visibility: hidden;
     font-size: 0;
-    overflow: hidden;
+	overflow: hidden;
 }
  
 .O-Slider {
+	background: linear-gradient(rgb(48, 39, 39), rgb(65, 55, 55));
     overflow-x: hidden;
     /* margin-left: 150px; */
     /* background-color: #333; */
 
-    
 }
  
 .O-sliderElements {
     list-style: none;
     position: relative;
     left: 0;
-    width: 400%;
-    margin-bottom: .8em;
+
+    width: 500%;
     padding: 0;
     transition: left 1.5s ease-in-out;
-    margin-left: 145px;
+    margin-left: 60px;
     margin-top: 60px;
-    
-    
-    
-    
+
 }
  
 .O-sliderElements > li {
     float: left;
-    width: 25%;
-    position: relative;
-    
+
+    width: 20%;
+    position: relative;  
 }
 
 
@@ -624,6 +628,11 @@ nav {
 #slide04:checked ~ .O-sliderElements {
     left: -300%;
 }
+
+
+#slide05:checked ~ .O-sliderElements {
+    left: -400%;
+}
  
 
 /* Bildunterschrift auf dem Bild positionieren */
@@ -634,33 +643,30 @@ nav {
     left: 0;
     bottom: 1em;
     padding: .4em;
-    background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.5);
+}
 
-    
-    
-} */
-
+ */
  
 /* Bilder responsive */
+
+
 .O-sliderElements img {
     width: 100%;
     height: auto;
-    
 }
  
- 
-/* inputs aus dem Blickfeld schieben */
 .O-Slider input {
     position: absolute;
     left: -99999px;
-    
 }
  
-/* mittige Ausrichtung der Controls - funktioniert im Zusammenspiel mit inline-block */
+
 .sliderControls {
     text-align: center;
 }
  
+
 /* Controls nebeneinander bringen */
 .sliderControls li {
     display: inline-block;
@@ -668,6 +674,7 @@ nav {
 }
  
 /* Controls auf einheitliche Maße bringen und die Ecken abrunden */
+
 .sliderControls label {
     width: 20px;
     height: 20px;
@@ -677,17 +684,25 @@ nav {
     border-radius: 50%;
     display: block;
     cursor: pointer;
-    background: #68B022;
-    color: #68B022;
-    
-}
- 
 
-/* Attributselektor und indirekter Nachfahrkombinator zum ansteuern der labels */
+    background: black; 
+    color: black;   
+}
+
+
 .sliderControls label:hover,
 #slide01:checked ~ .sliderControls label[for="slide01"],
 #slide02:checked ~ .sliderControls label[for="slide02"],
 #slide03:checked ~ .sliderControls label[for="slide03"],
+
+#slide04:checked ~ .sliderControls label[for="slide04"], 
+#slide05:checked ~ .sliderControls label[for="slide05"]{
+    background: rgb(255, 94, 0);
+    color: rgb(255, 94, 0);
+}
+
+
+
 #slide04:checked ~ .sliderControls label[for="slide04"] {
 
   background: rgb(255, 94, 0);
@@ -854,9 +869,10 @@ nav {
     height: auto;
   }
 
-}   
-/*////////////////////////////Content Areas////////////////////////*/
+    
+}
 
+/* ////////////////////////////background//////////////////////// */
 #header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)), url('../img/bg1.jpg');
     background-repeat: no-repeat;
@@ -895,13 +911,14 @@ nav {
 }
 #goals{
     height: 50vh;
-    background-color: rgb(95, 121, 82);
-    position: relative;
-    top: 0;
-    left: 0;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)), url('../img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     scroll-behavior: smooth;
 }
-/* /////////////////////////Style of Content Areas////////////////////// */
+/*  /////////////////////////Style of Content Areas//////////////////////  */
 
 .gridContainer div>span{
     font-size: 34px;
