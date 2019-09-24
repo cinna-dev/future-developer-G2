@@ -1,29 +1,29 @@
 *{
-    box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   border: 0;
-   font-size: 100%;
+  box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
 }
 
 /* ////////////////////////////////navbar////////////////////////////// */
 html{
-    scroll-behavior: smooth;      /* importantt for smooth scroll */
-    /* color: -internal-root-color; */
+  scroll-behavior: smooth;      /* importantt for smooth scroll */
+  /* color: -internal-root-color; */
 
-        
+      
 }
 
 ul{
-	list-style: none;
-	display: block;
+list-style: none;
+display: block;
 }
 
 
 
 table{
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 
 }
 
@@ -32,11 +32,12 @@ table{
 
 
 .clearfix {
-	clear: both;
+clear: both;
 }
 
 
 nav {
+
   font-family: 'Droid Sans', sans-serif;
     /* background: -webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(204, 204, 204, 0.8))); */
     background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(39, 39, 39, 0.9)));
@@ -70,34 +71,36 @@ nav {
   position: relative;
   display: list-item;
   border-radius: 10px 10px 35px 5px;
+
 }
 
 .menu>li::after{
-	content: "";
-	background-color: rgba(0, 0, 0, 0.1);
-	height: 40px;
-	border-radius: 35%;
-	width: 4px;
-	z-index: 101;
-	display: block;
-	top: 6px;
-	right: -2px;
-	position: absolute;
+content: "";
+background-color: rgba(0, 0, 0, 0.1);
+height: 40px;
+border-radius: 35%;
+width: 4px;
+z-index: 101;
+display: block;
+top: 6px;
+right: -2px;
+position: absolute;
 }
 .menu>li:nth-child(6)::after{
-	content: "";
-	background-color: rgba(0, 0, 0, 0.1);
-	height: 40px;
-	border-radius: 35%;
-	width: 4px;
-	z-index: 101;
-	display: block;
-	top: 6px;
-	left: 0;
-	position: absolute;
+content: "";
+background-color: rgba(0, 0, 0, 0.1);
+height: 40px;
+border-radius: 35%;
+width: 4px;
+z-index: 101;
+display: block;
+top: 6px;
+left: 0;
+position: absolute;
 }
 
 .menu>li:nth-child(6){
+
     float: right;
     display: inline;  
 
@@ -106,40 +109,42 @@ nav {
 
 .menu>li>a>p:first-child{
   display: inline-block ;
+
 }
 /* .menu>li:nth-child(6)>a>span{
-	display: block; 
-    position: relative;
-    margin-left: 0px;
-	top:46px;	
-	font-size: 32px;
-	width: auto;
-	height: 14px;
-	border-radius: 0 0 25% 25%;
-	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
-	transition: transform 0.25s;
-	z-index: 102;
-    box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
-   
+display: block; 
+  position: relative;
+  margin-left: 0px;
+top:46px;	
+font-size: 32px;
+width: auto;
+height: 14px;
+border-radius: 0 0 25% 25%;
+background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
+transition: transform 0.25s;
+z-index: 102;
+  box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+ 
 } */
 
 /* .menu>li:nth-child(3)>a>span{
-    display: block; 
-    position: relative;
-    margin-left: 0px;
-    left: 0;
-	top:46px;	
-	font-size: 32px;
-	width: auto;
-	height: 14px;
-	border-radius: 0 0 25% 25%;
-	background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
-	transition: transform 0.25s;
-	z-index: 102;
-    box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
-   
+  display: block; 
+  position: relative;
+  margin-left: 0px;
+  left: 0;
+top:46px;	
+font-size: 32px;
+width: auto;
+height: 14px;
+border-radius: 0 0 25% 25%;
+background-image:  radial-gradient(circle,rgba(255, 255, 255, 0.8), rgba(204, 204, 204, 0.8));;
+transition: transform 0.25s;
+z-index: 102;
+  box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.4);
+ 
 } */
 .menu>li>a{
+
   
   color: white;
   display: inline-block;
@@ -278,45 +283,54 @@ nav {
     background-color: rgba(255, 166, 0, 0.568);
     text-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
   } */
+
 /* Dropdown styles */
 
 .menu ul {
-	position: relative;
-	/* left: -9999px; */
-	list-style: none;
-	opacity: 0;
-	height: 0;
-	overflow: hidden;
-	display: block;
+position: relative;
+/* left: -9999px; */
+list-style: none;
+opacity: 0;
+height: 0;
+overflow: hidden;
+display: block;
 
 }
 
 /* .menu ul li {
-	float: none;
-	
+float: none;
+
 } */
 
 /* .menu ul a {
-	white-space: nowrap;
-	
+white-space: nowrap;
+
 
 
 }
- */
+*/
 /*//////////////////////////// Displays the dropdown on hover and moves back into position////////////////////////// */
 .menu li:hover ul {
+
     /* background:-webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(204, 204, 204, 0.7)));      */         
     background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(39, 39, 39, 0.9)));
 	border-radius: 0 0 10px 10px;
 	opacity: 1;
     height: auto;
     transition: height 0.5s, opacity 0.5s ease;
+
 }
 .menu>li:nth-child(6):hover>a>span{
-		opacity: 0;
+  opacity: 0;
 }
 .menu>li:nth-child(3):hover>a>span{
-	opacity: 0;
+opacity: 0;
+}
+.menu>li:nth-child(6)>a>span{
+transition: opacity 1s;
+}
+.menu>li:nth-child(3)>a>span{
+transition: opacity 1s;
 }
 .menu>li:nth-child(6)>a>span{
   transition: opacity 1s;
@@ -327,46 +341,54 @@ nav {
 /*////////////////////////////////////////// Persistant Hover State //////////////////////////////////////////*/
 
 .menu li:hover >a {
+
     color: black;
 }
 /* .menu li:hover{
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.178);
     background-color: rgba(255, 166, 0, 0.568);
+
 } */
 
 .menu li:hover ul a {
-	/* background: none; */
-	border-radius: 0;
+/* background: none; */
+border-radius: 0;
 }
 
 .menu li:hover ul li a:hover {
 
-	
-	text-shadow:  0px 0px 4px 2px rgba(0,0,0,0.3);
-	
+
+text-shadow:  0px 0px 4px 2px rgba(0,0,0,0.3);
+
 }
 /*/////////////// togglebox ///////////////*/
 #togglecheckbox{
-	display: none;
-	}
+display: none;
+}
 
-	
+
 .togglelabel{
-	top: 20px;
-	width:50px;
-	height:50px;
-	position: relative;
-	display: none;
-	margin: 10px;	
+top: 20px;
+width:50px;
+height:50px;
+position: relative;
+display: none;
+margin: 10px;	
 }
 
 .togglelabel>label{
-	transition: transform 0.25s;
-	color: rgba(0, 0, 0, 0.8);
+transition: transform 0.25s;
+color: rgba(0, 0, 0, 0.8);
 }
 
 #togglecheckbox:checked ~ .menu{
-	height: auto;
+height: auto;
+}
+#navContainer{
+
+position: relative;
+background-color:rgba(0, 0, 0, 0.603);
+height: 200vh;
 }
 #navContainer{
 
@@ -376,35 +398,66 @@ nav {
 }
 /*//////////////////////////// media querry///////////////////////////////// */
 @media (max-width: 821px){
-	.togglelabel{
-		display: block; 
-	}
-	#togglecheckbox:checked ~ .menu{
-		height: auto;
-	}
-	#togglecheckbox:checked ~ .menu li::before{
+.togglelabel{
+  display: block; 
+}
+#togglecheckbox:checked ~ .menu{
+  height: auto;
+}
+#togglecheckbox:checked ~ .menu li::before{
 
-		content: "";
-		width: auto;
-		height: 1px;
-		display: block;
-		position: relative;
-		background-color: black;
-		z-index: 101;
+  content: "";
+  width: auto;
+  height: 1px;
+  display: block;
+  position: relative;
+  background-color: black;
+  z-index: 101;
 
-	}
-	#togglecheckbox:checked + div>label{
-		color: rgba(255, 255, 255, 0.9);
-		transform: rotateZ(90deg);
-		background-color: rgba(0, 0, 0, 0.3);
-	}
-	nav{
-       
-        margin: 0;
-        width: auto;
-        
-    }
+}
+#togglecheckbox:checked + div>label{
+  color: rgba(255, 255, 255, 0.9);
+  transform: rotateZ(90deg);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+nav{
+     
+      margin: 0;
+      width: auto;
+      
+  }
+  
+/* .menu>li:nth-child(6):hover>a>span{
+  transform: translateY(60px)
+}
+.menu>li:nth-child(3):hover>a>span{
+transform: translateY(114px)
+} */
+.menu>li>a{
+
+     width: 100vw;
+     text-align: center;	
+  }
+
+.menu>li::after{
+  content: "";
+  display: none;
+}
+.menu>li>ul>li{
+  display: list-item;
+  float: none;
+ 
+}
+.menu li{
+  width: 100%;
+      height: auto;
+      
+  }
+.menu li ul li{
+      text-align: center;
+      width: auto;   
     
+
 	/* .menu>li:nth-child(6):hover>a>span{
 		transform: translateY(60px)
 	}
@@ -486,12 +539,13 @@ nav {
 	.menu ul {
 		text-align: center;
 	}
+
 }
 /* ///////////////for Reduce Motion API's//////////////// */
 @media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+html {
+  scroll-behavior: auto;
+}
 }
 
 
@@ -526,23 +580,28 @@ nav {
 }
 
 .tm-gallery-item figure {
+
     position: relative;
     float: left;
     overflow: hidden;
     text-align: center;
     cursor: pointer;  
     display: block;	
+
 }
-  
+
 .tm-gallery-item figure img {
+
     position: relative;
     display: block;
     height: auto;
     max-width: 18vw;
     opacity: 1;
+
 }
-  
+
 .tm-gallery-item figure figcaption {
+
     padding: 10px;
     color: rgb(255, 255, 255);
     font-size: 1.25em;
@@ -554,21 +613,19 @@ nav {
   
 .tm-gallery-item figure figcaption {
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   
-  /* Anchor will cover the whole item by default */
-  /* For some effects it will show as a button */
-  .tm-gallery-item figure figcaption > a {
+}
+
 
     z-index: 1000;
     text-indent: 200%;
@@ -633,49 +690,70 @@ nav {
     transition: opacity 2s, transform 2s;
     
   }
+
   
-  figure.effect-bubba figcaption::before {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    transform: scale(0, 1);
-  }
+}
+
+figure.effect-bubba:hover img {
+  opacity: 0.8;
+  filter: blur(5px)
+}
+
+.effect-bubba figcaption::before,
+.effect-bubba figcaption::after {
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+
+  border-radius: 20px;
+  content: "";
+  opacity: 0;
+  transition: opacity 2s, transform 2s;
   
+
   figure.effect-bubba figcaption::after {
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     transform: scale(1, 0);
   } 
-  
-  figure.effect-bubba h2 {
 
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    opacity: 0;
-    transition: transform 1s;
-    transform: translate3d(0, -30px, 0);
+  
+  transform: scale(1, 0);
+} 
+
+figure.effect-bubba h2 {
+
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: transform 1s;
+  transform: translate3d(0, -30px, 0);
 
 }
-  
+
 figure.effect-bubba p {
-    width: 100%;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 3s, transform 3s;
-    transform: translate3d(0, 340px, 0);
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 3s, transform 3s;
+  transform: translate3d(0, 340px, 0);
 }
-  
+
 figure.effect-bubba:hover figcaption::before,
 figure.effect-bubba:hover figcaption::after {
-    opacity: 1;
-    transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
 }
-  
+
 figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
-  
+
 .O-sliderElements,
 .O-sliderElements figure,
 .sliderControls {
@@ -685,9 +763,11 @@ figure.effect-bubba:hover p {
   	margin-right: 5px;
 	  margin-bottom: 70px;
 
+
 }
- 
+
 .O-sliderElements:after {
+
     content: ".";
     display: block;
     height: 0;
@@ -695,21 +775,25 @@ figure.effect-bubba:hover p {
     visibility: hidden;
     font-size: 0;
 	overflow: hidden;
+
 }
- 
+
 .O-Slider {
+
 	/* background: linear-gradient(rgb(48, 39, 39), rgb(65, 55, 55)); */
     overflow-x: hidden;
     /* margin-left: 150px; */
     /* background-color: #333; */
 
 
+
 }
- 
+
 .O-sliderElements {
-    list-style: none;
-    position: relative;
-    left: 0;
+  list-style: none;
+  position: relative;
+  left: 0;
+
 
     width: 500%;
     padding: 0;
@@ -732,80 +816,84 @@ figure.effect-bubba:hover p {
     
   
 
+
 }
 
 
 #slide02:checked ~ .O-sliderElements {
-    left: -100%;
+  left: -100%;
 }
- 
+
 #slide03:checked ~ .O-sliderElements {
-    left: -200%;
+  left: -200%;
 }
- 
+
 #slide04:checked ~ .O-sliderElements {
-    left: -300%;
+  left: -300%;
 }
 
 
 #slide05:checked ~ .O-sliderElements {
-    left: -400%;
+  left: -400%;
 }
- 
+
 
 /* Bildunterschrift auf dem Bild positionieren */
 /* .sliderElements figcaption {
-    display: block;
-    color: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 1em;
-    padding: .4em;
-  background: rgba(0,0,0,.5);
+  display: block;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 1em;
+  padding: .4em;
+background: rgba(0,0,0,.5);
 }
 
- */
- 
+*/
+
 /* Bilder responsive */
 
 
 .O-sliderElements img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
- 
+
 .O-Slider input {
-    position: absolute;
-    left: -99999px;
+  position: absolute;
+  left: -99999px;
 }
- 
+
 
 .sliderControls {
-    text-align: center;
+  text-align: center;
 }
+
 
  
 
 /* Controls nebeneinander bringen */
 .sliderControls li {
-    display: inline-block;
-    
+  display: inline-block;
+  
 }
- 
+
 /* Controls auf einheitliche Maße bringen und die Ecken abrunden */
 
 .sliderControls label {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 50%;
-    display: block;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+
 
     background: rgb(255, 255, 255); 
     color: rgb(255, 255, 255);   
+
 }
 
 
@@ -816,17 +904,10 @@ figure.effect-bubba:hover p {
 
 #slide04:checked ~ .sliderControls label[for="slide04"], 
 #slide05:checked ~ .sliderControls label[for="slide05"]{
-    background: rgb(255, 94, 0);
-    color: rgb(255, 94, 0);
-}
-
-
-
-#slide04:checked ~ .sliderControls label[for="slide04"] {
-
   background: rgb(255, 94, 0);
   color: rgb(255, 94, 0);
 }
+
 
 /* ////////////////////////////background//////////////////////// */
 #header{
@@ -958,10 +1039,12 @@ figure[class*="chart-" ] img {
   
 }
 
+
 .chart-1:hover .outer {
   stroke-dashoffset: 100 !important; /* HTML */
  
 }
+
 .chart-2:hover .outer {
   stroke-dashoffset: 320 !important;/* css */
  
@@ -983,6 +1066,7 @@ figure[class*="chart-" ][data-percent='100'] .outer {
 figure[class*="chart-" ][data-percent='75'] .outer {
   stroke-dashoffset: 534;
   animation: show75 2s;
+
 }
 
 figure[class*="chart-" ][data-percent='25'] .outer {
@@ -994,6 +1078,7 @@ figure[class*="chart-" ][data-percent='25'] .outer {
 /*  /////////////////////////Style of Content Areas//////////////////////  */
 
 .gridContainer div>span{
+
     font-size: 34px;
     text-align: center;
    
@@ -1009,16 +1094,16 @@ figure[class*="chart-" ][data-percent='25'] .outer {
     top: 16px;
     right: 58vw;
     position: absolute;
+
 }
 .gridContainer div span::after{
-    content: "";
-    width: 40vw;
-    height: 4px;
-    border-radius: 25%;
-    background-color: #444;
-    display: block;
-    top: 16px;
-    left: 58vw;
-    position: absolute;
+  content: "";
+  width: 40vw;
+  height: 4px;
+  border-radius: 25%;
+  background-color: #444;
+  display: block;
+  top: 16px;
+  left: 58vw;
+  position: absolute;
 }
- */
