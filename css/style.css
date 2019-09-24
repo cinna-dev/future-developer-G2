@@ -5,7 +5,11 @@
  border: 0;
  font-size: 100%;
 }
-
+:root{      
+  --color1:#DCD8CF;
+  --color2: #E25D33;
+  --color3: rgb(40, 40, 39);
+}            /* #282827 */
 /* ////////////////////////////////navbar////////////////////////////// */
 html{
   scroll-behavior: smooth;      /* importantt for smooth scroll */
@@ -39,7 +43,7 @@ clear: both;
 nav {
 font-family: 'Droid Sans', sans-serif;
   /* background: -webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(204, 204, 204, 0.8))); */
-  background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(39, 39, 39, 0.9)));
+  background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(19, 19, 19, 0.8)));
 /* background-image: linear-gradientrgba( rgba(255, 255, 255, 0.8), (rgba(204, 204, 204, 0.8))); */
 /* border-radius: 6px; */
 box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
@@ -74,7 +78,7 @@ border-radius: 10px 10px 35px 5px;
 
 .menu>li::after{
 content: "";
-background-color: rgba(0, 0, 0, 0.1);
+background-color: var(--color3);
 height: 40px;
 border-radius: 35%;
 width: 4px;
@@ -86,7 +90,7 @@ position: absolute;
 }
 .menu>li:nth-child(6)::after{
 content: "";
-background-color: rgba(0, 0, 0, 0.1);
+background-color: var(--color3);
 height: 40px;
 border-radius: 35%;
 width: 4px;
@@ -176,7 +180,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background:-webkit-gradient(linear, center top, center bottom, from(rgba(251, 213, 142, 0.8)), to(rgba(255, 166, 0, 0.9))); /* rgba(255, 166, 0, 0.568); */
+background:-webkit-gradient(linear, center top, center bottom, from( rgba(251, 213, 142, 0.8)), to(var(--color2))); /* rgba(255, 166, 0, 0.568); */
 border-radius: 100%;
 transform: scale(0);
 transition-property: transform;
@@ -205,7 +209,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background:-webkit-gradient(linear, center top, center bottom, from(rgba(251, 213, 142, 0.8)), to(rgba(255, 166, 0, 0.9))); /* rgba(255, 166, 0, 0.568); */
+background:-webkit-gradient(linear, center top, center bottom, from(rgba(251, 213, 142, 0.8)), to(var(--color2))); /* rgba(255, 166, 0, 0.568); */
 border-radius: 100%;
 transform: scale(0);
 transition-property: transform;
@@ -306,7 +310,7 @@ white-space: nowrap;
 /*//////////////////////////// Displays the dropdown on hover and moves back into position////////////////////////// */
 .menu li:hover ul {
   /* background:-webkit-gradient(linear, center top, center bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(204, 204, 204, 0.7)));      */         
-  background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(39, 39, 39, 0.9)));
+  background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(var(--color3)));
 border-radius: 0 0 10px 10px;
 opacity: 1;
   height: auto;
@@ -389,7 +393,7 @@ height: 200vh;
   height: 1px;
   display: block;
   position: relative;
-  background-color: black;
+  background-color: var(--color3);
   z-index: 101;
 
 }
@@ -479,7 +483,7 @@ transform: translateY(114px)
   height: 0;
   overflow: hidden;
       transition: height 1s cubic-bezier(0.23, 1, 0.320, 1) ;
-      background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.8)), to(rgba(39, 39, 39, 0.8)));
+      background: -webkit-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.8)), to(var(--color3)));
 }
 
 .menu ul {
@@ -519,7 +523,7 @@ opacity: 0.8;
 
 .tm-gallery-item figure figcaption {
   padding: 10px;
-  color: rgb(255, 255, 255);
+  color: var(--color1);
   font-size: 1.25em;
   backface-visibility: hidden;
 }
@@ -788,16 +792,16 @@ background: rgba(0,0,0,.5);
 
 #slide04:checked ~ .sliderControls label[for="slide04"], 
 #slide05:checked ~ .sliderControls label[for="slide05"]{
-  background: rgb(255, 94, 0);
-  color: rgb(255, 94, 0);
+  background: var(--color2);
+  color: var(--color2);
 }
 
 
 
 #slide04:checked ~ .sliderControls label[for="slide04"] {
 
-background: rgb(255, 94, 0);
-color: rgb(255, 94, 0);
+background: var(--color2);
+color: var(--color2);
 }
 
 /* ////////////////////////////background//////////////////////// */
