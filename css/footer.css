@@ -3,7 +3,9 @@
 /////////////////////////////////////////////////////////////////////////////////////*/
 
 .footer {
-    top: -60px; 
+
+    top: -60px;
+
     position: relative;
     overflow: hidden;
     height: 250px;

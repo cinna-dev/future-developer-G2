@@ -10,7 +10,9 @@
 
 #slider {
    top: 0;
-   left: 100px;
+
+   left: 0;
+
     background: #000;
     border: 5px solid #666666;
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
