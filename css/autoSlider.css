@@ -11,10 +11,14 @@
 
 
 /* SLIDER STRUCTURE */
-
+.container{
+   float: left;
+   margin-right: 50px;
+    margin-bottom: 50px;
+}
 #slider {
-   top: 0;
-   left: 40px;
+   
+   
     background: var(--color3);
     border: 5px solid var(--color1);
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
@@ -22,7 +26,7 @@
     width: 853px;
     margin: 40px auto 0;
     overflow: visible;
-    position: absolute;
+    position: relative;
  }
  /* HIDE ALL OUTSIDE OF THE SLIDER */
  #mask {
@@ -37,6 +41,7 @@
     position: relative;
  }
 .sliderImg>img{
+   float: left;
     height: 480px;
     width: 853px;  
  }
@@ -152,7 +157,7 @@
     18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
  }
 
- @media (max-width: 1000px){
+ @media (max-width: 1300px){
    #slider {
        height: 320px;
        width: 569px;
@@ -172,26 +177,129 @@
    .progress-bar {
        width: 569px;
     }
+    @keyframes cycle {
+      0%  { left: 0px; } 
+      4%  { left: 0px; } 
+      16% { left: 0px; opacity:1; z-index:0; } 
+      20% { left: 569px; opacity: 0; z-index: 0; } 
+      21% { left: -569px; opacity: 0; z-index: -1; } 
+      92% { left: -569px; opacity: 0; z-index: 0; } 
+      96% { left: -569px; opacity: 0; } 
+      100%{ left: 0px; opacity: 1; } 
+   }
+   
+   @keyframes cycletwo {  
+      0%  { left: -569px; opacity: 0; } 
+      16% { left: -569px; opacity: 0; }
+      20% { left: 0px; opacity: 1; }
+      24% { left: 0px; opacity: 1; }  
+      36% { left: 0px; opacity: 1; z-index: 0; }  
+      40% { left: 569px; opacity: 0; z-index: 0; } 
+      41% { left: -569px; opacity: 0; z-index: -1; }   
+      100%{ left: -569px; opacity: 0; z-index: -1; }
+   }
+   
+   @keyframes cyclethree {
+      0%  { left: -569px; opacity: 0; }
+      36% { left: -569px; opacity: 0; }
+      40% { left: 0px; opacity: 1; }
+      44% { left: 0px; opacity: 1; }
+      56% { left: 0px; opacity: 1; }
+      60% { left: 569px; opacity: 0; z-index: 0; }
+      61% { left: -569px; opacity: 0; z-index: -1; }
+      100%{ left: -569px; opacity: 0; z-index: -1; }
+   }
+   
+   @keyframes cyclefour {
+      0%  { left: -569px; opacity: 0; }
+      56% { left: -569px; opacity: 0; }
+      60% { left: 0px; opacity: 1; }
+      64% { left: 0px; opacity: 1; }
+      76% { left: 0px; opacity: 1; z-index: 0; }
+      80% { left: 569px; opacity: 0; z-index: 0; }
+      81% { left: -569px; opacity: 0; z-index: -1; }
+      100%{ left: -569px; opacity: 0; z-index: -1; }
+   }
+   @keyframes cyclefive {
+      0%  { left: -569px; opacity: 0; }
+      76% { left: -569px; opacity: 0; }
+      80% { left: 0px; opacity: 1; }
+      84% { left: 0px; opacity: 1; }
+      96% { left: 0px; opacity: 1; z-index: 0; }
+      100%{ left: 569px; opacity: 0; z-index: 0; }
+   }
  }
- @media (max-width: 800px){
-   #slider {
-       height: 320px;
-       width: 569px;
-    }
-    #mask {
-       height: 320px;
-    }
-   .sliderImg>img{
-       height: 320px;
-       width: 569px;  
-    }
-    #slider li {
-       width: 569px; 
-       height: 320px; 
-       left: -569px; 
-    }
-   .progress-bar {
-       width: 569px;
-    }
- }
+ 
 
+ @media (max-width: 700px){
+   #slider {
+       height: 160px;
+       width: 284px;
+    }
+    #mask {
+       height: 160px;
+    }
+   .sliderImg>img{
+       height: 160px;
+       width: 284px;  
+    }
+    #slider li {
+       width: 284px; 
+       height: 160px; 
+       left: -284px; 
+    }
+   .progress-bar {
+       width: 284px;
+    }
+    @keyframes cycle {
+      0%  { left: 0px; } 
+      4%  { left: 0px; } 
+      16% { left: 0px; opacity:1; z-index:0; } 
+      20% { left: 284px; opacity: 0; z-index: 0; } 
+      21% { left: -284px; opacity: 0; z-index: -1; } 
+      92% { left: -284px; opacity: 0; z-index: 0; } 
+      96% { left: -284px; opacity: 0; } 
+      100%{ left: 0px; opacity: 1; } 
+   }
+   
+   @keyframes cycletwo {  
+      0%  { left: -284px; opacity: 0; } 
+      16% { left: -284px; opacity: 0; }
+      20% { left: 0px; opacity: 1; }
+      24% { left: 0px; opacity: 1; }  
+      36% { left: 0px; opacity: 1; z-index: 0; }  
+      40% { left: 284px; opacity: 0; z-index: 0; } 
+      41% { left: -284px; opacity: 0; z-index: -1; }   
+      100%{ left: -284px; opacity: 0; z-index: -1; }
+   }
+   
+   @keyframes cyclethree {
+      0%  { left: -284px; opacity: 0; }
+      36% { left: -284px; opacity: 0; }
+      40% { left: 0px; opacity: 1; }
+      44% { left: 0px; opacity: 1; }
+      56% { left: 0px; opacity: 1; }
+      60% { left: 284px; opacity: 0; z-index: 0; }
+      61% { left: -284px; opacity: 0; z-index: -1; }
+      100%{ left: -284px; opacity: 0; z-index: -1; }
+   }
+   
+   @keyframes cyclefour {
+      0%  { left: -284px; opacity: 0; }
+      56% { left: -284px; opacity: 0; }
+      60% { left: 0px; opacity: 1; }
+      64% { left: 0px; opacity: 1; }
+      76% { left: 0px; opacity: 1; z-index: 0; }
+      80% { left: 284px; opacity: 0; z-index: 0; }
+      81% { left: -284px; opacity: 0; z-index: -1; }
+      100%{ left: -284px; opacity: 0; z-index: -1; }
+   }
+   @keyframes cyclefive {
+      0%  { left: -284px; opacity: 0; }
+      76% { left: -284px; opacity: 0; }
+      80% { left: 0px; opacity: 1; }
+      84% { left: 0px; opacity: 1; }
+      96% { left: 0px; opacity: 1; z-index: 0; }
+      100%{ left: 284px; opacity: 0; z-index: 0; }
+   }
+ }

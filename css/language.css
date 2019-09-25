@@ -35,3 +35,24 @@ p:lang(de){
 #languageDe:checked  ~ nav ul li ul li label p:lang(en){
     display: none;
 }
+
+
+
+
+
+
+
+
+
+#languageEn:checked ~ #about>p:lang(de){
+    display: none;
+}
+#languageEn:checked ~ #about>p:lang(en){
+    display: block;
+}
+#languageDe:checked ~ #about>p:lang(de){
+    display: block;
+}
+#languageDe:checked ~ #about>p:lang(en){
+    display: none;
+}

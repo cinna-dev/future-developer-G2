@@ -1,0 +1,259 @@
+:root {
+  --color1: #dcd8cf;
+  --color2: #e25d33;
+  --color3: rgb(40, 40, 39);
+}
+
+.first-colum,
+.secound-colum {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.first-colum .content {
+  margin: 20px 20px 0px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 5px;
+}
+.first-colum .content .text {
+  padding: 150px;
+  font-size: 35px;
+  color: var(--color3);
+  opacity: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.secound-colum .content {
+  margin: 0px 20px 20px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 5px;
+}
+.secound-colum .content .text {
+  padding: 150px;
+  font-size: 35px;
+  color: var(--color3);
+  opacity: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+.first-colum .content,
+.goals-icon,
+.secound-colum .content {
+  width: 50%;
+}
+
+#goals-right > h1 {
+  color: var(--color3);
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#goals-left > h1 {
+  color: var(--color3);
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+#goals-left,
+#goals-right {
+  padding: 137px;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+figure[class*="chart-"] {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  animation: ME 5s linear 0s infinite alternate;
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+figure[class*="chart-"]figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  line-height: 50px;
+}
+.goals-icon figcaption {
+  color: #333;
+  opacity: 1;
+  font-weight: 600;
+  top: 0;
+  height: 27px;
+  line-height: 0px;
+  text-align: center;
+  padding-bottom: 100px;
+  font-size: 32px;
+  padding: 0px !important;
+  position: unset !important;
+}
+figure[class*="chart-"] img {
+  position: absolute;
+  top: 70px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.html {
+  top: 50px;
+  left: 45px;
+}
+
+.html + svg .outer {
+  stroke: #e34f26;
+}
+
+.css {
+  top: 55px;
+  left: 48px;
+}
+
+.css + svg .outer {
+  stroke: #0d84ce;
+}
+
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
+  top: 45px;
+  left: 45px;
+}
+
+.javascript + svg .outer {
+  stroke: #f0e040;
+}
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+}
+
+.chart-1:hover .outer {
+  stroke-dashoffset: 150 !important; /* HTML */
+}
+
+.chart-2:hover .outer {
+  stroke-dashoffset: 230 !important; /* css */
+}
+.chart-3:hover .outer {
+  stroke-dashoffset: 350 !important; /* Javascript */
+}
+.secound-colum .chart-1:hover .outer {
+  stroke-dashoffset: 10 !important; /* HTML */
+}
+.secound-colum .chart-2:hover .outer {
+  stroke-dashoffset: 50 !important; /* css */
+}
+.secound-colum .chart-3:hover .outer {
+  stroke-dashoffset: 220 !important; /* Javascript */
+}
+/* END Circle colors and graphic positions */
+
+/* Set the initial values for the animation */
+figure[class*="chart-"][data-percent="100"] .outer {
+  stroke-dashoffset: 534;
+  animation: show100 2s;
+}
+
+figure[class*="chart-"][data-percent="75"] .outer {
+  stroke-dashoffset: 534;
+  animation: show75 2s;
+}
+
+figure[class*="chart-"][data-percent="25"] .outer {
+  stroke-dashoffset: 534;
+  animation: show25 2s;
+}
+
+@keyframes ME {
+  0% {
+    color: rgb(90, 90, 90);
+  }
+  25% {
+    color: rgb(80, 40, 3);
+  }
+  50% {
+    color: rgb(85, 46, 46);
+  }
+  75% {
+    color: rgb(102, 107, 102);
+  }
+  100% {
+    color: rgb(131, 104, 54);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .first-colum .content {
+    width: 100%;
+  }
+  .secound-colum .content {
+    width: 100%;
+  }
+  .first-colum,
+  .secound-colum {
+    flex-direction: column;
+  }
+  .goals-icon {
+    width: 100%;
+  }
+  #goals-left {
+    text-align: center;
+  }
+  .social-icons > li > a > i {
+    font-size: 60px;
+  }
+}
+
+#goals {
+  width: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  background-color: var(--color1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+#goals > h1 {
+  color: var(--color3);
+  text-align: center;
+  margin-top: 40px;
+  font-size: 4rem;
+}
+#goals > h1::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 66vw;
+  height: 3px;
+  background-color: var(--color3);
+  top: 0px;
+  left: 16.5vw;
+  border-radius: 30px 30px 30px 30px;
+}
+/* END Container styles */
