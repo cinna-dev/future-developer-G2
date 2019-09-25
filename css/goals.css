@@ -20,10 +20,15 @@
 }
 .first-colum .content .text {
   padding: 150px;
+  text-align: left;
   font-size: 35px;
   color: var(--color3);
   opacity: 1;
   font-family: "Times New Roman", Times, serif;
+}
+.first-colum .content .text > p {
+  font-size: 25px;
+  line-height: 40px;
 }
 
 .secound-colum .content {
@@ -34,10 +39,15 @@
 }
 .secound-colum .content .text {
   padding: 150px;
+  text-align: left;
   font-size: 35px;
   color: var(--color3);
   opacity: 1;
   font-family: "Times New Roman", Times, serif;
+}
+.secound-colum .content .text > p {
+  font-size: 25px;
+  line-height: 40px;
 }
 .first-colum .content,
 .goals-icon,
