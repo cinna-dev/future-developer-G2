@@ -14,11 +14,10 @@
 .footer {
   position: relative;
   overflow: hidden;
-  height: 150px;
+  height: 250px;
   box-sizing: border-box;
-  background-image: linear-gradient(to left, #945f44, #4d392e);
+  background-image: linear-gradient(to left, #353535, #353535);
   background-size: cover;
-  margin: auto;
 }
 
 .inner_footer {
@@ -39,6 +38,7 @@
   text-align: center;
 }
 .logo svg {
+  padding-top: 50px;
   width: 200px;
   fill: #fff;
   animation: myfirst 5s linear 0s infinite alternate;
@@ -112,6 +112,7 @@ ul {
   color: #fff;
 }
 ul.social-icons {
+  width: 100%;
   margin-top: 10px;
 }
 .social-icons li {
@@ -120,6 +121,7 @@ ul.social-icons {
 }
 .social-icons a {
   color: #fff;
+  font-size: 42px;
   text-decoration: none;
 }
 .fa-facebook {
