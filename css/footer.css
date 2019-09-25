@@ -1,0 +1,240 @@
+/*///////////////////////////////////////////////////////////////////////////////////
+////////////////////////         Footer  Area        ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color1: #dcd8cf;
+  --color2: #e25d33;
+  --color3: #282827;
+}
+.footer {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  box-sizing: border-box;
+  background-image: url(../gallery/re77.png);
+  background-size: cover;
+  margin: auto;
+}
+
+.inner_footer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  top: -15px;
+}
+
+.logo {
+  width: 25%;
+  height: 100%;
+  margin: 0px 5px;
+  margin-top: 50px;
+  text-align: center;
+}
+.logo svg {
+  width: 200px;
+  fill: #fff;
+  animation: myfirst 5s linear 0s infinite alternate;
+}
+
+@keyframes myfirst {
+  0% {
+    fill: rgb(131, 103, 103);
+    transform: scale(1);
+  }
+  25% {
+    fill: rgb(206, 132, 14);
+    transform: scale(1.2);
+  }
+  50% {
+    fill: rgb(156, 156, 156);
+    transform: scale(1.1);
+  }
+  75% {
+    fill: rgb(102, 107, 102);
+    transform: scale(1.2);
+  }
+  100% {
+    fill: rgb(206, 139, 16);
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .footer {
+    height: auto;
+  }
+  .inner_footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: auto;
+  }
+  .inner_footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100%;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin-left: 80px;
+}
+.footer-social-icons {
+  width: 350px;
+  display: block;
+  margin-left: 450px;
+  margin-top: 50px;
+}
+.social-icon {
+  color: #fff;
+}
+ul.social-icons {
+  margin-top: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+.fa-rss {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-rss:hover {
+  background-color: #eb8231;
+}
+.fa-youtube {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+.fa-github {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-github:hover {
+  background-color: #5a32a3;
+}
+.to-top-container {
+  position: fixed;
+  z-index: 2;
+  bottom: 60px;
+  right: 20px;
+}
+
+.to-top svg {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 50%;
+  fill: rgb(189, 133, 2);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 999px) {
+  .footer-social-icons {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-icon {
+    color: #fff;
+  }
+  ul.social-icons {
+    margin-top: 10px;
+  }
+  .social-icons li {
+    vertical-align: top;
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-social-icons {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .social-icon {
+    color: #fff;
+  }
+  ul.social-icons {
+    margin-top: 10px;
+  }
+  .social-icons li {
+    vertical-align: top;
+    display: inline;
+  }
+}

@@ -1,0 +1,127 @@
+.goals-container {
+  background: url(../gallery/goals-bg.jpg) 50%;
+  animation: space 5s linear 0s infinite alternate;
+}
+.first-colum,
+.secound-colum {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-colum .content {
+  margin: 20px 20px 0px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 40px;
+}
+.first-colum .content .text {
+  padding: 15px;
+  font-size: 28px;
+  color: #000;
+  opacity: 1;
+}
+
+.secound-colum .content {
+  margin: 0px 20px 20px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom-right-radius: 40px;
+}
+.secound-colum .content .text {
+  padding: 15px;
+  text-align: right;
+  font-size: 28px;
+  color: #000;
+  opacity: 1;
+}
+.first-colum .content,
+.goals-icon,
+.secound-colum .content {
+  width: 50%;
+}
+.secound-colum {
+  direction: rtl;
+}
+#goals-left {
+  text-align: left !important;
+}
+#goals-left,
+#goals-right {
+  padding: 50px 0;
+  text-align: right;
+
+  /* top: -60px;  */
+
+  /* background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('../img/bg1.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+figure[class*="chart-"] {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 32px;
+  color: #fff;
+  animation: myfirst 5s linear 0s infinite alternate;
+}
+figure[class*="chart-"]figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+  font-size: 48px;
+}
+
+figure[class*="chart-"] img {
+  position: absolute;
+  top: 70px;
+  max-width: 100px;
+  max-height: 100px;
+  background: #282827;
+  border-radius: 20%;
+}
+
+@keyframes myfirst {
+  0% {
+    color: rgb(131, 103, 103);
+  }
+  25% {
+    color: rgb(206, 132, 14);
+  }
+  50% {
+    color: rgb(156, 156, 156);
+  }
+  75% {
+    color: rgb(102, 107, 102);
+  }
+  100% {
+    color: rgb(206, 139, 16);
+  }
+}
+@keyframes space {
+  0% {
+    padding: 0px 10px;
+  }
+  25% {
+    padding: 0px 5px;
+  }
+  50% {
+    padding: 0px 0px;
+  }
+  75% {
+    padding: 0px 5px;
+  }
+  100% {
+    padding: 0px 10px;
+  }
+}
