@@ -16,7 +16,7 @@
   overflow: hidden;
   height: 150px;
   box-sizing: border-box;
-  background-image: url(../gallery/re77.png);
+  background-image: linear-gradient(to left, #945f44 , #4d392e );
   background-size: cover;
   margin: auto;
 }

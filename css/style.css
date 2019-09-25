@@ -655,10 +655,15 @@ figure.effect-bubba:hover img {
   transition: opacity 2s, transform 2s;
 }
 
-.figure.effect-bubba figcaption::after {
+figure.effect-bubba figcaption::after {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
   transform: scale(1, 0);
+}
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: scale(0, 1);
 }
 
 figure.effect-bubba h2 {
@@ -845,76 +850,6 @@ background: rgba(0,0,0,.5);
 }
 
 /* Colors for the circles and positions for the graphics */
-.html {
-  top: 50px;
-  left: 45px;
-}
-
-.html + svg .outer {
-  stroke: #e34f26;
-}
-
-.css {
-  top: 55px;
-  left: 48px;
-}
-
-.css + svg .outer {
-  stroke: #0d84ce;
-}
-
-.javascript {
-  max-width: 90px;
-  max-height: 90px;
-  top: 45px;
-  left: 45px;
-}
-
-.javascript + svg .outer {
-  stroke: #f0e040;
-}
-
-.chart svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.outer {
-  fill: transparent;
-  stroke: #333;
-  stroke-width: 20;
-  stroke-dasharray: 534;
-  transition: stroke-dashoffset 1s;
-}
-
-.chart-1:hover .outer {
-  stroke-dashoffset: 100 !important; /* HTML */
-}
-
-.chart-2:hover .outer {
-  stroke-dashoffset: 320 !important; /* css */
-}
-.chart-3:hover .outer {
-  stroke-dashoffset: 400 !important; /* Javascript */
-}
-/* END Circle colors and graphic positions */
-
-/* Set the initial values for the animation */
-figure[class*="chart-"][data-percent="100"] .outer {
-  stroke-dashoffset: 534;
-  animation: show100 2s;
-}
-
-figure[class*="chart-"][data-percent="75"] .outer {
-  stroke-dashoffset: 534;
-  animation: show75 2s;
-}
-
-figure[class*="chart-"][data-percent="25"] .outer {
-  stroke-dashoffset: 534;
-  animation: show25 2s;
-}
 
 /*  /////////////////////////Style of Content Areas//////////////////////  */
 
