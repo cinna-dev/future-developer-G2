@@ -1,50 +1,30 @@
 * {
-	margin: 0; 
-	padding: 0; 
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: Poppins-Regular, sans-serif;
 }
-
+:root{      
+  --color1: #DCD8CF;
+  --color2: #E25D33;
+  --color3: #282827 ;
+}            
 /*--------------INPUT-------------------------------*/
 
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 textarea {
   outline: none;
   border: none;
 }
-
-textarea:focus, input:focus {
-  border-color: transparent !important;
-}
-
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
-
-input::-webkit-input-placeholder { color: #adadad;}
-input:-moz-placeholder { color: #adadad;}
-input::-moz-placeholder { color: #adadad;}
-input:-ms-input-placeholder { color: #adadad;}
-
-textarea::-webkit-input-placeholder { color: #adadad;}
-textarea:-moz-placeholder { color: #adadad;}
-textarea::-moz-placeholder { color: #adadad;}
-textarea:-ms-input-placeholder { color: #adadad;}
-
 /*-------------------TEXT--------------------------*/
 
 .txt1 {
@@ -54,11 +34,13 @@ textarea:-ms-input-placeholder { color: #adadad;}
   color: rgb(223, 211, 211);
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Contact ]*/
+/*---------------- Contact---------------------------*/
 
-.container-contact100 {
-  width: 100%;  
+
+.container-contact {
+  position: relative;
+  top: 0;
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -69,10 +51,10 @@ textarea:-ms-input-placeholder { color: #adadad;}
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #f2f2f2;
+  background: white;
 }
 
-.wrap-contact100 {
+.wrap-contact {
   width: 1120px;
   background: #fff;
   overflow: hidden;
@@ -86,44 +68,10 @@ textarea:-ms-input-placeholder { color: #adadad;}
   flex-direction: row-reverse;
 }
 
-/*==================================================================
-[ Contact more ]*/
-.contact-more {
-  width: 50%;
-  background-image:url('../img/1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: 1;
-  padding: 30px 15px 0px 15px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 1px;
-} 
+/*--------------------------- Form --------------------------*/
 
-.contact-more::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.8);
-}
 
-/*==================================================================
-[ Form ]*/
-
-.contact100-form {
+.contact-form {
   width: 50%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -134,39 +82,35 @@ textarea:-ms-input-placeholder { color: #adadad;}
   padding: 56px 55px 63px 55px;
 }
 
-.contact100-form-title {
+.contact-form-title {
   width: 100%;
   display: block;
   font-family: Poppins-Regular;
   font-size: 30px;
-  color: orange;
+  color: var(--color2);
   line-height: 1.2;
   text-align: center;
   padding-bottom: 33px;
 }
 
-/*------------------------------------------------------------------
-[ Input ]*/
+/*------------------------ Input ------------------------*/
 
-.wrap-input100 {
+
+.wrap-input {
   width: 100%;
   position: relative;
   border: 1px solid #e6e6e6;
 }
 
-.rs1-wrap-input100,
-.rs2-wrap-input100 {
+.rs1-wrap-input,
+.rs2-wrap-input {
   width: 50%;
 }
 
-.rs2-wrap-input100 {
-  border-left: none;
-}
-
-.label-input100 {
+.label-input {
   font-family: Poppins-Regular;
   font-size: 12px;
-  color: #555555;
+  color: var(--color3);
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -179,13 +123,11 @@ textarea:-ms-input-placeholder { color: #adadad;}
   width: 100%;
   min-height: 55px;
   border: 1px solid #e6e6e6;
-  border-bottom: none; 
   padding: 10px 25px;
   margin-top: 15px;
-  margin-bottom: 0;
 }
 
-.input100 {
+.input {
   display: block;
   width: 100%;
   background: transparent;
@@ -194,21 +136,18 @@ textarea:-ms-input-placeholder { color: #adadad;}
   color: #666666;
   line-height: 1.2;
   padding: 0 25px;
-}
-
-input.input100 {
   height: 55px;
 }
 
-textarea.input100 {
+textarea.input {
   min-height: 139px;
   padding-top: 19px;
   padding-bottom: 15px;
 }
 
-/*---------------------------------------------*/
+/*--------------------------FOCUS BORDER ------------------------------*/
 
-.focus-input100 {
+.focus-input {
   position: absolute;
   display: block;
   width: calc(100% + 2px);
@@ -216,7 +155,7 @@ textarea.input100 {
   top: -1px;
   left: -1px;
   pointer-events: none;
-  border: 1px solid orange;
+  border: 1px solid var(--color2);
   visibility: hidden;
   opacity: 0;
 
@@ -232,7 +171,7 @@ textarea.input100 {
   transform: scaleX(1.1) scaleY(1.3);
 }
 
-.input100:focus + .focus-input100 {
+.input:focus+.focus-input {
   visibility: visible;
   opacity: 1;
 
@@ -243,20 +182,20 @@ textarea.input100 {
   transform: scale(1);
 }
 
-/*------------------------------------------------------------------
-[ Button ]*/
+/*--------------------------- Button--------------------*/
+
 
 button {
-	outline: none;
-	border: none;
-	background: transparent;
+  outline: none;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
-} 
+  cursor: pointer;
+}
 
-.container-contact100-form-btn {
+.container-contact-form-btn {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -268,7 +207,7 @@ button:hover {
   padding-top: 23px;
 }
 
-.contact100-form-btn {
+.contact-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -280,7 +219,7 @@ button:hover {
   min-width: 200px;
   height: 50px;
   border-radius: 2px;
-  background: orange;
+  background: var(--color2);
   font-family: Montserrat-Bold;
   font-size: 12px;
   color: #fff;
@@ -294,15 +233,48 @@ button:hover {
   transition: all 0.4s;
 }
 
-.contact100-form-btn:hover {
-  background: #333333;
+.contact-form-btn:hover {
+  background: var(--color3);
 }
 
-/*------------------------------------------------------------------
-[ Responsive ]*/
+/*--------------------- Contact more ------------------------*/
+
+.contact-more {
+  background: url('../img/1.jpg');
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding: 30px 15px 0px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+}
+
+.contact-more::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*---------------Responsive----------------------*/
 
 @media (max-width: 992px) {
-  .contact100-form {
+  .contact-form {
     width: 60%;
     padding: 56px 30px 63px 30px;
   }
@@ -313,7 +285,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .contact100-form {
+  .contact-form {
     width: 100%;
   }
 
@@ -323,18 +295,17 @@ button:hover {
 }
 
 @media (max-width: 576px) {
-  .contact100-form {
+  .contact-form {
     padding: 56px 15px 63px 15px;
   }
 
-  .rs1-wrap-input100,
-  .rs2-wrap-input100 {
+  .rs1-wrap-input,
+  .rs2-wrap-input {
     width: 100%;
   }
 
-  .rs2-wrap-input100 {
+  .rs2-wrap-input {
     border-left: 1px solid #e6e6e6;
     border-top: none;
   }
 }
-
