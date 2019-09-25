@@ -14,9 +14,9 @@
 .footer {
   position: relative;
   overflow: hidden;
-  height: 250px;
+  height: 200px;
   box-sizing: border-box;
-  background-image: linear-gradient(to left, #353535, #353535);
+  background-image: linear-gradient(to left, #ac6a00, #282827);
   background-size: cover;
 }
 
