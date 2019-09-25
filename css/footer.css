@@ -16,7 +16,7 @@
   overflow: hidden;
   height: 150px;
   box-sizing: border-box;
-  background-image: linear-gradient(to left, #945f44 , #4d392e );
+  background-image: linear-gradient(to left, #945f44, #4d392e);
   background-size: cover;
   margin: auto;
 }
@@ -100,13 +100,13 @@
 ul {
   padding: 0;
   list-style: none;
-  margin-left: 80px;
+  margin: 0;
+  width: 262px;
+  text-align: center;
 }
 .footer-social-icons {
-  width: 350px;
   display: block;
-  margin-left: 450px;
-  margin-top: 50px;
+  margin: auto;
 }
 .social-icon {
   color: #fff;

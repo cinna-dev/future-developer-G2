@@ -29,7 +29,7 @@
   font-size: 35px;
   color: #fff;
   opacity: 1;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .secound-colum .content {
@@ -43,7 +43,7 @@
   font-size: 35px;
   color: #fff;
   opacity: 1;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .first-colum .content,
 .goals-icon,
@@ -62,7 +62,7 @@
   margin-bottom: 50px;
   text-align: center;
   font-size: 25px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 #goals-left > h1 {
   color: #fff;
@@ -90,8 +90,6 @@ figure[class*="chart-"] {
   animation: ME 5s linear 0s infinite alternate;
   font-size: 35px;
   margin-top: 30px;
-  
-  
 }
 
 figure[class*="chart-"]figcaption {
@@ -204,5 +202,26 @@ figure[class*="chart-"][data-percent="25"] .outer {
   }
   100% {
     color: rgb(131, 104, 54);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .first-colum .content {
+    width: 100%;
+  }
+  .secound-colum .content {
+    width: 100%;
+  }
+  .first-colum,
+  .secound-colum {
+    flex-direction: column;
+  }
+  .goals-icon {
+    width: 100%;
+  }
+  #goals-left {
+    text-align: center;
+  }
+  .social-icons > li > a > i {
+    font-size: 60px;
   }
 }
