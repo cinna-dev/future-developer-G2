@@ -1,0 +1,37 @@
+/* ///////////////////////////////////////////Languages/////////////////////////////////////////////// */
+#languageEn{
+    display: none;
+}
+#languageDe{
+    display: none;
+}
+
+p:lang(de){
+    display: none;
+}
+#languageEn:checked ~ nav ul li p:lang(de){
+    display: none;
+}
+#languageEn:checked ~ nav ul li p:lang(en){
+    display: block;
+}
+#languageDe:checked ~ nav ul li p:lang(de){
+    display: block;
+}
+#languageDe:checked  ~ nav ul li p:lang(en){
+    display: none;
+}
+
+
+#languageEn:checked ~ nav ul li ul li label p:lang(de){
+    display: none;
+}
+#languageEn:checked ~ nav ul li ul li label p:lang(en){
+    display: block;
+}
+#languageDe:checked ~ nav ul li ul li label p:lang(de){
+    display: block;
+}
+#languageDe:checked  ~ nav ul li ul li label p:lang(en){
+    display: none;
+}

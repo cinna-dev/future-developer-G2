@@ -1,0 +1,191 @@
+/*///////////////////////////////////////////////////////////////////////////////////
+////////////////////////         Footer  Area        ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////*/
+
+.footer {
+
+    top: -60px;
+
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    box-sizing: border-box;
+    background: url('../gallery/footer-background.jpg');
+    margin: auto;
+  }
+  
+  .inner_footer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  
+  .logo {
+    width: 25%;
+    height: 100%;
+    margin: 0px 5px;
+    margin-top: 95px;
+    text-align: center;
+  }
+  .logo svg {
+    width: 200px;
+    fill: #fff;
+    animation: myfirst 5s linear 0s infinite alternate;
+  }
+  
+  @keyframes myfirst {
+    0% {
+      fill: red;
+      transform: scale(1);
+    }
+    25% {
+      fill: yellow;
+      transform: scale(1.2);
+    }
+    50% {
+      fill: blue;
+      transform: scale(1.1);
+    }
+    75% {
+      fill: green;
+      transform: scale(1.2);
+    }
+    100% {
+      fill: red;
+      transform: scale(1);
+    }
+  }
+  
+  .inner_footer_blog {
+    width: 75%;
+    margin: 0px 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .third-blog {
+    width: 33.3%;
+    position: relative;
+  
+    transition: 0.5s ease-in-out;
+  }
+  
+  .third-blog:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .third-title {
+    height: 50px;
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+  .third-title:hover {
+    color: #fff;
+  }
+  
+  .third-blog a {
+    display: block;
+    color: #fff;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .third-blog a:hover {
+    color: aqua;
+  }
+  
+  .social {
+    text-align: center;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .social li {
+    padding: 0px 20px;
+    list-style: none;
+  }
+  
+  .social i {
+    font-size: 48px;
+    transition: 0.5 ease-in-out;
+  }
+  
+  .social i:hover {
+    font-size: 50px;
+    transform: rotate(360deg);
+  }
+  
+  .to-top-container {
+    position: fixed;
+    z-index: 2;
+    bottom: 60px;
+    right: 20px;
+  }
+  
+  .to-top svg {
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 50%;
+    fill: #fff;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  @media only screen and (max-width: 999px) {
+    .inner_footer {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .inner_footer_blog {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      font-size: 25px;
+    }
+    .logo {
+      width: 100%;
+    }
+    .third-blog {
+      width: 33.3%;
+    }
+    .footer {
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .inner_footer {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .inner_footer_blog {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 25px;
+    }
+    .logo {
+      width: 100%;
+    }
+    .third-blog {
+      width: 100%;
+    }
+    .footer {
+      height: auto;
+    }
+  }
+  

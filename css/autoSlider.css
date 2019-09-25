@@ -1,0 +1,197 @@
+/*  19:9 
+1080px x 1920px
+569px x 320px
+853px x 480px
+1280px x 720px */
+:root{      
+   --color1: #DCD8CF;
+   --color2: #E25D33;
+   --color3: #282827;
+ }
+
+
+/* SLIDER STRUCTURE */
+
+#slider {
+   top: 0;
+   left: 40px;
+    background: var(--color3);
+    border: 5px solid var(--color1);
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+    height: 480px;
+    width: 853px;
+    margin: 40px auto 0;
+    overflow: visible;
+    position: absolute;
+ }
+ /* HIDE ALL OUTSIDE OF THE SLIDER */
+ #mask {
+    overflow: hidden;
+    height: 480px;
+ }
+ /* IMAGE LIST */
+
+#slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+ }
+.sliderImg>img{
+    height: 480px;
+    width: 853px;  
+ }
+ #slider li {
+    width: 853px;  /* Width Image */
+    height: 480px; /* Height Image */
+    position: absolute;
+    left: -853px; /* Original Position - Outside of the Slider */
+    list-style: none;
+ }
+/* PROGRESS BAR */
+
+.progress-bar {
+    position: relative;
+    top: -5px;
+    width: 853px;
+    height: 10px;
+    background: linear-gradient(to right, var(--color3), var(--color2));
+    animation: fullexpand 45s ease-out infinite;
+ }
+
+
+ #slider li.firstanimation {
+    animation: cycle 45s linear infinite;
+ }
+ 
+ #slider li.secondanimation {
+    animation: cycletwo 45s linear infinite;
+ }
+ 
+ #slider li.thirdanimation {
+    animation: cyclethree 45s linear infinite;
+ }
+ 
+ #slider li.fourthanimation {
+    animation: cyclefour 45s linear infinite;
+ }
+ 
+ #slider li.fifthanimation {
+    animation: cyclefive 45s linear infinite;
+ }
+
+ /* animatin Slider*/
+
+@keyframes cycle {
+    0%  { left: 0px; } /* When you start the slide, the first image is already visible */
+    4%  { left: 0px; } /* Original Position */
+    16% { left: 0px; opacity:1; z-index:0; } /* 0 z index*/
+    20% { left: 853px; opacity: 0; z-index: 0; } /* push full width to the right */
+    21% { left: -853px; opacity: 0; z-index: -1; } /* Return go to the other sider while -1 z index */
+    92% { left: -853px; opacity: 0; z-index: 0; } /* change z index back */
+    96% { left: -853px; opacity: 0; } /* waiting*/
+    100%{ left: 0px; opacity: 1; } /* back in frame with full opacity */
+ }
+ 
+ @keyframes cycletwo {  /* offset animation of cycle1 */
+    0%  { left: -853px; opacity: 0; } 
+    16% { left: -853px; opacity: 0; }
+    20% { left: 0px; opacity: 1; }
+    24% { left: 0px; opacity: 1; }  
+    36% { left: 0px; opacity: 1; z-index: 0; }  
+    40% { left: 853px; opacity: 0; z-index: 0; } 
+    41% { left: -853px; opacity: 0; z-index: -1; }   
+    100%{ left: -853px; opacity: 0; z-index: -1; }
+ }
+ 
+ @keyframes cyclethree {
+    0%  { left: -853px; opacity: 0; }
+    36% { left: -853px; opacity: 0; }
+    40% { left: 0px; opacity: 1; }
+    44% { left: 0px; opacity: 1; }
+    56% { left: 0px; opacity: 1; }
+    60% { left: 853px; opacity: 0; z-index: 0; }
+    61% { left: -853px; opacity: 0; z-index: -1; }
+    100%{ left: -853px; opacity: 0; z-index: -1; }
+ }
+ 
+ @keyframes cyclefour {
+    0%  { left: -853px; opacity: 0; }
+    56% { left: -853px; opacity: 0; }
+    60% { left: 0px; opacity: 1; }
+    64% { left: 0px; opacity: 1; }
+    76% { left: 0px; opacity: 1; z-index: 0; }
+    80% { left: 853px; opacity: 0; z-index: 0; }
+    81% { left: -853px; opacity: 0; z-index: -1; }
+    100%{ left: -853px; opacity: 0; z-index: -1; }
+ }
+ @keyframes cyclefive {
+    0%  { left: -853px; opacity: 0; }
+    76% { left: -853px; opacity: 0; }
+    80% { left: 0px; opacity: 1; }
+    84% { left: 0px; opacity: 1; }
+    96% { left: 0px; opacity: 1; z-index: 0; }
+    100%{ left: 853px; opacity: 0; z-index: 0; }
+ }
+
+ /* animation progressbar */
+
+@keyframes fullexpand {
+    /* In these keyframes, the progress-bar is stationary */
+    0%, 20%, 40%, 60%, 80%, 100% { width: 0%; opacity: 0; }
+ 
+    /* In these keyframes, the progress-bar starts to come alive */
+    4%, 24%, 44%, 64%, 84% { width: 0%; opacity: 0.3; }
+ 
+    /* In these keyframes, the progress-bar moves forward for 3 seconds */
+    16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
+ 
+    /* In these keyframes, the progress-bar has finished his path */
+    17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
+ 
+    /* In these keyframes, the progress-bar will disappear and then resume the cycle */
+    18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
+ }
+
+ @media (max-width: 1000px){
+   #slider {
+       height: 320px;
+       width: 569px;
+    }
+    #mask {
+       height: 320px;
+    }
+   .sliderImg>img{
+       height: 320px;
+       width: 569px;  
+    }
+    #slider li {
+       width: 569px; 
+       height: 320px; 
+       left: -569px; 
+    }
+   .progress-bar {
+       width: 569px;
+    }
+ }
+ @media (max-width: 800px){
+   #slider {
+       height: 320px;
+       width: 569px;
+    }
+    #mask {
+       height: 320px;
+    }
+   .sliderImg>img{
+       height: 320px;
+       width: 569px;  
+    }
+    #slider li {
+       width: 569px; 
+       height: 320px; 
+       left: -569px; 
+    }
+   .progress-bar {
+       width: 569px;
+    }
+ }
+
