@@ -29,6 +29,7 @@
   font-size: 35px;
   color: #fff;
   opacity: 1;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .secound-colum .content {
@@ -42,7 +43,7 @@
   font-size: 35px;
   color: #fff;
   opacity: 1;
-  
+  font-family: 'Times New Roman', Times, serif;
 }
 .first-colum .content,
 .goals-icon,
@@ -57,17 +58,18 @@
   text-align: left;
 }
 #goals-right > h1 {
- color: #fff;
+  color: #fff;
   margin-bottom: 50px;
   text-align: center;
   font-size: 25px;
-  font-family:   Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 #goals-left > h1 {
   color: #fff;
   margin-bottom: 50px;
   text-align: center;
   font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
 }
 #goals-left,
 #goals-right {
@@ -84,11 +86,11 @@ figure[class*="chart-"] {
   position: relative;
   display: inline-block;
   color: #999;
-  font-size: 20px;
   text-align: center;
   animation: ME 5s linear 0s infinite alternate;
   font-size: 35px;
   margin-top: 30px;
+  
   
 }
 
