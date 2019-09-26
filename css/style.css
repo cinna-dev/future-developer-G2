@@ -9,7 +9,6 @@
   --color1: #dcd8cf;
   --color2: #e25d33;
   --color3: #282827;
-  --test: rgb(255, 0, 0);
 }
 /* ////////////////////////////////navbar////////////////////////////// */
 html {
@@ -41,7 +40,8 @@ nav {
     center top,
     center bottom,
     from(rgba(77, 77, 77, 0.9)),
-    to(rgba(19, 19, 19, 0.8)));
+    to(rgba(19, 19, 19, 0.8))
+  );
   /* background-: linear-gradient(linear, center top, center bottom, from(rgba(77, 77, 77, 0.9)), to(rgba(19, 19, 19, 0.8))); */
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
   position: sticky;
@@ -58,10 +58,8 @@ nav {
 .menu {
   /*  position: absolute; */
   display: block;
-    width: 100%;
-    padding-right: 20px;
-    font-family:unset;
-
+  width: 100%;
+  padding-right: 20px;
 }
 .menu > li {
   width: auto;
@@ -107,62 +105,67 @@ nav {
   display: inline-block;
 }
 .menu>li:nth-child(6)>a>p>span{
-font-size: 22px;
-color: var(--color2);
-font-weight: bolder;
-}
-
-.menu>li:nth-child(3)>a>span{
- font-size: 22px;
- color: var(--color2);
+  font-size: 22px;
+  color: var(--color2);
   font-weight: bolder;
-}
-.menu>li>a{
+  }
+  
+  .menu>li:nth-child(3)>a>span{
+   font-size: 22px;
+   color: var(--color2);
+    font-weight: bolder;
+  }
+.menu > li > a {
   color: var(--color1);
   display: inline-block;
-	font-size: 20px;
-    /* width: 10vw; */
+  font-size: 20px;
+  /* width: 10vw; */
   min-width: 9vw;
-	padding-top: 16px;
-	padding-bottom: 16px;
-	/* vertical-align: middle; */
-    text-decoration: none;
-	position: relative;
-	text-transform: uppercase;
-  text-align: center;	
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /* vertical-align: middle; */
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
   border-radius: 0px 0px 25px 25px;
-  font-weight: bolder;
 }
 /* //////////////////  anchor hover animation /////////////////// */
-.menu li a{
+.menu li a {
   color: var(--color1);
-border-radius: 0px 0px 25px 25px;
-display: inline-block;
-vertical-align: middle;
-transform: perspective(1px) translateZ(0);
-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-position: relative;
-overflow: hidden;
-transition-property: color;
-transition-duration: 0.3s;
+  border-radius: 0px 0px 25px 25px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  transition-property: color;
+  transition-duration: 0.3s;
 }
 .menu li a:before {
-content: "";
-position: absolute;
-z-index: -1;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background:-webkit-gradient(linear, center top, center bottom, from( rgba(251, 213, 142, 0.8)), to(var(--color2))); /* rgba(255, 166, 0, 0.568); */
-border-radius: 100%;
-transform: scale(0);
-transition-property: transform;
-transition-duration: 0.6s;
-transition-timing-function: ease-out;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(
+    linear,
+    center top,
+    center bottom,
+    from(rgba(251, 213, 142, 0.8)),
+    to(var(--color2))
+  ); /* rgba(255, 166, 0, 0.568); */
+  border-radius: 100%;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
 }
-.menu li a:hover:before{
-transform: scale(2);
+.menu li a:hover:before {
+  transform: scale(2);
 }
 .menu>li>ul>li>label{
 border-radius: 0px 0px 25px 25px;
@@ -500,9 +503,11 @@ white-space: nowrap;
   float: left;
   position: relative;
   height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
     url("../img/bg1.jpg");
+
   width: 100%;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -563,6 +568,21 @@ white-space: nowrap;
   margin-top: 40px;
   font-size: 3rem;
 }
+
+
+
+
+
+
+/* Slideshow Omer */
+
+
+
+
+
+
+
+
 
 .tm-gallery-item {
   position: relative;
@@ -648,7 +668,7 @@ figure.effect-bubba {
 }
 
 figure.effect-bubba:hover img {
-  opacity: 0.6;
+  opacity: 0.4;
   filter: blur(5px);
 }
 
@@ -666,7 +686,7 @@ figure.effect-bubba:hover img {
 }
 
 figure.effect-bubba:hover img {
-  opacity: 0.8;
+  opacity: 0.2;
   filter: blur(5px);
 }
 
@@ -709,6 +729,8 @@ figure.effect-bubba p {
   opacity: 0;
   transition: opacity 3s, transform 3s;
   transform: translate3d(0, 340px, 0);
+  color: white;
+  
 }
 
 figure.effect-bubba:hover figcaption::before,
@@ -756,13 +778,10 @@ figure.effect-bubba:hover p {
   width: 500%;
   padding: 0;
   transition: left 1.5s ease-in-out;
-  /* margin-left: 20%; */
   margin-top: 60px;
 }
 
-/* li {
- list-style-type: none;
-} */
+
 
 .O-sliderElements > li {
   float: left;
@@ -801,12 +820,12 @@ figure.effect-bubba:hover p {
   text-align: center;
 }
 
-/* Controls nebeneinander bringen */
+
 .sliderControls li {
   display: inline-block;
 }
 
-/* Controls auf einheitliche Maße bringen und die Ecken abrunden */
+
 
 .sliderControls label {
   width: 20px;
@@ -832,7 +851,43 @@ figure.effect-bubba:hover p {
   color: var(--color2);
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 999px) {
+  .tm-gallery-item {
+    margin-left: 0;
+    width: 100%;
+  }
+  .O-sliderElements > li {
+    display: block;
+    width: 100%;
+  }
+  figure.effect-bubba {
+    width: 100%;
+  }
+  .tm-gallery-item figure img {
+    width: 100%;
+    max-width: none;
+  }
+  .O-sliderElements {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .O-sliderElements figure {
+    margin: 5%;
+    width: 90%;
+  }
+  #team {
+    height: auto;
+  }
+  .tm-gallery-item {
+    display: block;
+  }
+  .sliderControls {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .tm-gallery-item {
     margin-left: 0;
     width: 100%;
@@ -882,10 +937,10 @@ figure.effect-bubba:hover p {
   scroll-behavior: smooth;
 }
 .O-header-logo {
-  position: absolute;
-  height: 100px;
-  margin-left: 8vw;
-  margin-top: 0px;
+  
+  width: 110px;
+  margin-left: 7.5%;
+  margin-bottom: 0;
 }
 #about {
   color: var(--color3);
@@ -907,7 +962,7 @@ figure.effect-bubba:hover p {
 }
 
 #about p {
-  font-family: sans-serif;
+  line-height: 42px;
   color: var(--color3);
   margin: 30px;
   text-align: justify;

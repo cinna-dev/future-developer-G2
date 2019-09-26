@@ -14,11 +14,17 @@
 .footer {
   position: relative;
   overflow: hidden;
-  height: 250px;
+  height: 200px;
   box-sizing: border-box;
-  background-image: linear-gradient(to left, #353535, #353535);
+  background: linear-gradient(
+    0deg,
+    rgba(172, 106, 0, 0.896796218487395) 7%,
+    rgba(7, 11, 6, 0.835171568627451) 30%,
+    rgba(7, 11, 6, 0.8379726890756303) 65%,
+    rgba(172, 106, 0, 0.896796218487395) 94%
+  );
   background-size: cover;
-}
+ }
 
 .inner_footer {
   display: flex;
