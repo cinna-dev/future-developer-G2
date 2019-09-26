@@ -28,7 +28,7 @@
     overflow: visible;
     position: relative;
  }
- /* HIDE ALL OUTSIDE OF THE SLIDER */
+ 
  #mask {
     overflow: hidden;
     height: 480px;
@@ -157,7 +157,7 @@
     18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
  }
 
- @media (max-width: 1300px){
+ @media (max-width: 999px){
    #slider {
        height: 320px;
        width: 569px;
@@ -231,7 +231,7 @@
  }
  
 
- @media (max-width: 700px){
+ @media (max-width: 600px){
    #slider {
        height: 160px;
        width: 284px;
