@@ -12,10 +12,11 @@
 }
 /* ////////////////////////////////navbar////////////////////////////// */
 html {
-  scroll-behavior: smooth; /* importantt for smooth scroll */
+  scroll-behavior: smooth; 
+  
+  /* importantt for smooth scroll */
   /* color: -internal-root-color; */
 }
-
 ul {
   list-style: none;
   display: block;
@@ -301,19 +302,19 @@ white-space: nowrap;
   height: auto;
   transition: height 0.5s, opacity 0.5s ease;
 }
-.menu > li:nth-child(6):hover > a > span {
+.menu > li:nth-child(6):hover > a > p > span {
   opacity: 0;
 }
 .menu > li:nth-child(3):hover > a > span {
   opacity: 0;
 }
-.menu > li:nth-child(6) > a > span {
+/* .menu > li:nth-child(6) > a > span {
   transition: opacity 1s;
 }
 .menu > li:nth-child(3) > a > span {
   transition: opacity 1s;
-}
-.menu > li:nth-child(6) > a > span {
+} */
+.menu > li:nth-child(6) > a > p > span {
   transition: opacity 1s;
 }
 .menu > li:nth-child(3) > a > span {
@@ -345,7 +346,7 @@ white-space: nowrap;
 
 .togglelabel {
   top: 20px;
-  width: 50px;
+  width: auto;
   height: 50px;
   position: relative;
   display: none;
@@ -390,7 +391,7 @@ white-space: nowrap;
   }
   nav {
     margin: 0;
-    width: 100vw;
+    width: auto;
   }
 
   /* .menu>li:nth-child(6):hover>a>span{
@@ -412,7 +413,7 @@ white-space: nowrap;
     display: list-item;
     float: none;
   }
-  .menu li {
+  .menu>li {
     width: 100%;
     height: auto;
   }
@@ -443,7 +444,7 @@ white-space: nowrap;
     display: list-item;
     float: none;
   }
-  .menu li {
+  .menu > li:nth-child(3) {
     width: 100%;
     height: auto;
   }
@@ -458,17 +459,13 @@ white-space: nowrap;
     width: 100vw;
   }
   .menu > li:nth-child(3) > a > span {
-    display: inline;
-    position: absolute;
-    top: 10px;
-    left: 40vw;
+    margin-left: 10px;
+    
     font-size: 30px;
   }
   .menu > li:nth-child(6) > a > p > span {
-    display: inline;
-    position: absolute;
-    top: 10px;
-    left: 35vw;
+    margin-left: 10px;
+    
     font-size: 30px;
   }
   .menu li a:before {
@@ -851,7 +848,7 @@ figure.effect-bubba:hover p {
   color: var(--color2);
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 820px) {
   .tm-gallery-item {
     margin-left: 0;
     width: 100%;
@@ -949,6 +946,7 @@ figure.effect-bubba:hover p {
   color: var(--color1);
   /* width: 100%; */
   height: auto;
+  width: 100%;
   position: relative;
   /* background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('../img/bg2.jpg'); */
   background-color: var(--color1);
