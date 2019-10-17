@@ -214,10 +214,10 @@ figure[class*="chart-"][data-percent="25"] .outer {
 }
 @media only screen and (max-width: 999px) {
   .first-colum .content {
-    width: 100%;
+    width: auto;
   }
   .secound-colum .content {
-    width: 100%;
+    width: auto;
   }
   .first-colum,
   .secound-colum {
